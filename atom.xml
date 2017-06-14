@@ -4,9 +4,9 @@
   <subtitle>心有猛虎 细嗅蔷薇</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://joveyzheng.com/"/>
   <updated>2017-06-02T12:39:10.000Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://joveyzheng.com/</id>
   
   <author>
     <name>Jovey Zheng</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>深入理解闭包</title>
-    <link href="http://yoursite.com/2017/06/02/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E9%97%AD%E5%8C%85/"/>
-    <id>http://yoursite.com/2017/06/02/深入理解闭包/</id>
+    <link href="http://joveyzheng.com/2017/06/02/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3%E9%97%AD%E5%8C%85/"/>
+    <id>http://joveyzheng.com/2017/06/02/深入理解闭包/</id>
     <published>2017-06-02T12:29:32.000Z</published>
     <updated>2017-06-02T12:39:10.000Z</updated>
     
@@ -32,21 +32,21 @@
     
     </summary>
     
-      <category term="笔记随笔" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
+      <category term="笔记随笔" scheme="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://joveyzheng.com/tags/JavaScript/"/>
     
-      <category term="closure" scheme="http://yoursite.com/tags/closure/"/>
+      <category term="closure" scheme="http://joveyzheng.com/tags/closure/"/>
     
-      <category term="闭包" scheme="http://yoursite.com/tags/%E9%97%AD%E5%8C%85/"/>
+      <category term="闭包" scheme="http://joveyzheng.com/tags/%E9%97%AD%E5%8C%85/"/>
     
   </entry>
   
   <entry>
     <title>实用的 CSS — 贝塞尔曲线(cubic-bezier)</title>
-    <link href="http://yoursite.com/2016/03/16/%E5%AE%9E%E7%94%A8%E7%9A%84%20CSS%20%E2%80%94%20%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF(cubic-bezier)/"/>
-    <id>http://yoursite.com/2016/03/16/实用的 CSS — 贝塞尔曲线(cubic-bezier)/</id>
+    <link href="http://joveyzheng.com/2016/03/16/%E5%AE%9E%E7%94%A8%E7%9A%84%20CSS%20%E2%80%94%20%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF(cubic-bezier)/"/>
+    <id>http://joveyzheng.com/2016/03/16/实用的 CSS — 贝塞尔曲线(cubic-bezier)/</id>
     <published>2016-03-16T02:39:07.000Z</published>
     <updated>2017-06-14T11:31:50.000Z</updated>
     
@@ -107,21 +107,21 @@
     
     </summary>
     
-      <category term="笔记随笔" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
+      <category term="笔记随笔" scheme="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+      <category term="css" scheme="http://joveyzheng.com/tags/css/"/>
     
-      <category term="cubic-bezier" scheme="http://yoursite.com/tags/cubic-bezier/"/>
+      <category term="cubic-bezier" scheme="http://joveyzheng.com/tags/cubic-bezier/"/>
     
-      <category term="animation" scheme="http://yoursite.com/tags/animation/"/>
+      <category term="animation" scheme="http://joveyzheng.com/tags/animation/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 构建博客 - NexT 主题浅谈</title>
-    <link href="http://yoursite.com/2016/03/03/Hexo%20%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%20-%20NexT%20%E4%B8%BB%E9%A2%98%E6%B5%85%E8%B0%88/"/>
-    <id>http://yoursite.com/2016/03/03/Hexo 构建博客 - NexT 主题浅谈/</id>
+    <link href="http://joveyzheng.com/2016/03/03/Hexo%20%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%20-%20NexT%20%E4%B8%BB%E9%A2%98%E6%B5%85%E8%B0%88/"/>
+    <id>http://joveyzheng.com/2016/03/03/Hexo 构建博客 - NexT 主题浅谈/</id>
     <published>2016-03-03T06:16:35.000Z</published>
     <updated>2017-06-14T15:29:28.000Z</updated>
     
@@ -191,23 +191,23 @@
     
     </summary>
     
-      <category term="笔记随笔" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
+      <category term="笔记随笔" scheme="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://joveyzheng.com/tags/Hexo/"/>
     
-      <category term="NexT" scheme="http://yoursite.com/tags/NexT/"/>
+      <category term="NexT" scheme="http://joveyzheng.com/tags/NexT/"/>
     
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+      <category term="github" scheme="http://joveyzheng.com/tags/github/"/>
     
-      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://joveyzheng.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>React 入门实践</title>
-    <link href="http://yoursite.com/2016/01/26/React%20%E5%85%A5%E9%97%A8%E5%AE%9E%E8%B7%B5/"/>
-    <id>http://yoursite.com/2016/01/26/React 入门实践/</id>
+    <link href="http://joveyzheng.com/2016/01/26/React%20%E5%85%A5%E9%97%A8%E5%AE%9E%E8%B7%B5/"/>
+    <id>http://joveyzheng.com/2016/01/26/React 入门实践/</id>
     <published>2016-01-26T01:43:59.000Z</published>
     <updated>2017-06-02T12:35:10.000Z</updated>
     
@@ -326,21 +326,21 @@
     
     </summary>
     
-      <category term="React" scheme="http://yoursite.com/categories/React/"/>
+      <category term="React" scheme="http://joveyzheng.com/categories/React/"/>
     
     
-      <category term="React" scheme="http://yoursite.com/tags/React/"/>
+      <category term="React" scheme="http://joveyzheng.com/tags/React/"/>
     
-      <category term="入门" scheme="http://yoursite.com/tags/%E5%85%A5%E9%97%A8/"/>
+      <category term="入门" scheme="http://joveyzheng.com/tags/%E5%85%A5%E9%97%A8/"/>
     
-      <category term="实践" scheme="http://yoursite.com/tags/%E5%AE%9E%E8%B7%B5/"/>
+      <category term="实践" scheme="http://joveyzheng.com/tags/%E5%AE%9E%E8%B7%B5/"/>
     
   </entry>
   
   <entry>
     <title>React 测试驱动教程</title>
-    <link href="http://yoursite.com/2016/01/21/React%20%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2016/01/21/React 测试驱动教程/</id>
+    <link href="http://joveyzheng.com/2016/01/21/React%20%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://joveyzheng.com/2016/01/21/React 测试驱动教程/</id>
     <published>2016-01-21T10:19:35.000Z</published>
     <updated>2017-06-02T12:35:22.000Z</updated>
     
@@ -502,25 +502,25 @@
     
     </summary>
     
-      <category term="好文分享" scheme="http://yoursite.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
+      <category term="好文分享" scheme="http://joveyzheng.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="译文" scheme="http://yoursite.com/tags/%E8%AF%91%E6%96%87/"/>
+      <category term="译文" scheme="http://joveyzheng.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="React" scheme="http://yoursite.com/tags/React/"/>
+      <category term="React" scheme="http://joveyzheng.com/tags/React/"/>
     
-      <category term="Tutorial" scheme="http://yoursite.com/tags/Tutorial/"/>
+      <category term="Tutorial" scheme="http://joveyzheng.com/tags/Tutorial/"/>
     
-      <category term="Testing" scheme="http://yoursite.com/tags/Testing/"/>
+      <category term="Testing" scheme="http://joveyzheng.com/tags/Testing/"/>
     
-      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://joveyzheng.com/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>20 个交互非常棒的按钮代码</title>
-    <link href="http://yoursite.com/2015/12/24/20%20%E4%B8%AA%E4%BA%A4%E4%BA%92%E9%9D%9E%E5%B8%B8%E6%A3%92%E7%9A%84%E6%8C%89%E9%92%AE%E4%BB%A3%E7%A0%81/"/>
-    <id>http://yoursite.com/2015/12/24/20 个交互非常棒的按钮代码/</id>
+    <link href="http://joveyzheng.com/2015/12/24/20%20%E4%B8%AA%E4%BA%A4%E4%BA%92%E9%9D%9E%E5%B8%B8%E6%A3%92%E7%9A%84%E6%8C%89%E9%92%AE%E4%BB%A3%E7%A0%81/"/>
+    <id>http://joveyzheng.com/2015/12/24/20 个交互非常棒的按钮代码/</id>
     <published>2015-12-24T01:57:22.000Z</published>
     <updated>2017-06-02T12:35:33.000Z</updated>
     
@@ -581,23 +581,23 @@
     
     </summary>
     
-      <category term="好文分享" scheme="http://yoursite.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
+      <category term="好文分享" scheme="http://joveyzheng.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="译文" scheme="http://yoursite.com/tags/%E8%AF%91%E6%96%87/"/>
+      <category term="译文" scheme="http://joveyzheng.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="button" scheme="http://yoursite.com/tags/button/"/>
+      <category term="button" scheme="http://joveyzheng.com/tags/button/"/>
     
-      <category term="interactive" scheme="http://yoursite.com/tags/interactive/"/>
+      <category term="interactive" scheme="http://joveyzheng.com/tags/interactive/"/>
     
-      <category term="web" scheme="http://yoursite.com/tags/web/"/>
+      <category term="web" scheme="http://joveyzheng.com/tags/web/"/>
     
   </entry>
   
   <entry>
     <title>CSS 的使用中你可能不知道的 7 件事</title>
-    <link href="http://yoursite.com/2015/12/22/CSS%20%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%AD%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%207%20%E4%BB%B6%E4%BA%8B/"/>
-    <id>http://yoursite.com/2015/12/22/CSS 的使用中你可能不知道的 7 件事/</id>
+    <link href="http://joveyzheng.com/2015/12/22/CSS%20%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%AD%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%207%20%E4%BB%B6%E4%BA%8B/"/>
+    <id>http://joveyzheng.com/2015/12/22/CSS 的使用中你可能不知道的 7 件事/</id>
     <published>2015-12-22T07:50:56.000Z</published>
     <updated>2017-06-02T12:37:51.000Z</updated>
     
@@ -655,23 +655,23 @@
     
     </summary>
     
-      <category term="好文分享" scheme="http://yoursite.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
+      <category term="好文分享" scheme="http://joveyzheng.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="译文" scheme="http://yoursite.com/tags/%E8%AF%91%E6%96%87/"/>
+      <category term="译文" scheme="http://joveyzheng.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+      <category term="css" scheme="http://joveyzheng.com/tags/css/"/>
     
-      <category term="features" scheme="http://yoursite.com/tags/features/"/>
+      <category term="features" scheme="http://joveyzheng.com/tags/features/"/>
     
-      <category term="front-end" scheme="http://yoursite.com/tags/front-end/"/>
+      <category term="front-end" scheme="http://joveyzheng.com/tags/front-end/"/>
     
   </entry>
   
   <entry>
     <title>使用 React 是业务需求，而不是技术需求</title>
-    <link href="http://yoursite.com/2015/12/15/%E4%BD%BF%E7%94%A8%20React%20%E6%98%AF%E4%B8%9A%E5%8A%A1%E9%9C%80%E6%B1%82%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E6%8A%80%E6%9C%AF%E9%9C%80%E6%B1%82/"/>
-    <id>http://yoursite.com/2015/12/15/使用 React 是业务需求，而不是技术需求/</id>
+    <link href="http://joveyzheng.com/2015/12/15/%E4%BD%BF%E7%94%A8%20React%20%E6%98%AF%E4%B8%9A%E5%8A%A1%E9%9C%80%E6%B1%82%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E6%8A%80%E6%9C%AF%E9%9C%80%E6%B1%82/"/>
+    <id>http://joveyzheng.com/2015/12/15/使用 React 是业务需求，而不是技术需求/</id>
     <published>2015-12-15T04:23:23.000Z</published>
     <updated>2017-06-02T12:38:01.000Z</updated>
     
@@ -708,21 +708,21 @@
     
     </summary>
     
-      <category term="好文分享" scheme="http://yoursite.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
+      <category term="好文分享" scheme="http://joveyzheng.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="译文" scheme="http://yoursite.com/tags/%E8%AF%91%E6%96%87/"/>
+      <category term="译文" scheme="http://joveyzheng.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="React" scheme="http://yoursite.com/tags/React/"/>
+      <category term="React" scheme="http://joveyzheng.com/tags/React/"/>
     
-      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://joveyzheng.com/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>ReactJS 的学习教程</title>
-    <link href="http://yoursite.com/2015/12/07/ReactJS%20%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/"/>
-    <id>http://yoursite.com/2015/12/07/ReactJS 的学习教程/</id>
+    <link href="http://joveyzheng.com/2015/12/07/ReactJS%20%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/"/>
+    <id>http://joveyzheng.com/2015/12/07/ReactJS 的学习教程/</id>
     <published>2015-12-07T01:48:17.000Z</published>
     <updated>2017-06-02T12:38:10.000Z</updated>
     
@@ -761,25 +761,25 @@
     
     </summary>
     
-      <category term="好文分享" scheme="http://yoursite.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
+      <category term="好文分享" scheme="http://joveyzheng.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="译文" scheme="http://yoursite.com/tags/%E8%AF%91%E6%96%87/"/>
+      <category term="译文" scheme="http://joveyzheng.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="ReactJS" scheme="http://yoursite.com/tags/ReactJS/"/>
+      <category term="ReactJS" scheme="http://joveyzheng.com/tags/ReactJS/"/>
     
-      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="教程" scheme="http://joveyzheng.com/tags/%E6%95%99%E7%A8%8B/"/>
     
-      <category term="Tutorials" scheme="http://yoursite.com/tags/Tutorials/"/>
+      <category term="Tutorials" scheme="http://joveyzheng.com/tags/Tutorials/"/>
     
-      <category term="getting started lesson" scheme="http://yoursite.com/tags/getting-started-lesson/"/>
+      <category term="getting started lesson" scheme="http://joveyzheng.com/tags/getting-started-lesson/"/>
     
   </entry>
   
   <entry>
     <title>对于 Web 设计师和开发者非常有用的 25 个 Chrome 扩展应用</title>
-    <link href="http://yoursite.com/2015/12/04/%E5%AF%B9%E4%BA%8E%20Web%20%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%92%8C%E5%BC%80%E5%8F%91%E8%80%85%E9%9D%9E%E5%B8%B8%E6%9C%89%E7%94%A8%E7%9A%84%2025%20%E4%B8%AA%20Chrome%20%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/"/>
-    <id>http://yoursite.com/2015/12/04/对于 Web 设计师和开发者非常有用的 25 个 Chrome 扩展应用/</id>
+    <link href="http://joveyzheng.com/2015/12/04/%E5%AF%B9%E4%BA%8E%20Web%20%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%92%8C%E5%BC%80%E5%8F%91%E8%80%85%E9%9D%9E%E5%B8%B8%E6%9C%89%E7%94%A8%E7%9A%84%2025%20%E4%B8%AA%20Chrome%20%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/"/>
+    <id>http://joveyzheng.com/2015/12/04/对于 Web 设计师和开发者非常有用的 25 个 Chrome 扩展应用/</id>
     <published>2015-12-04T02:10:33.000Z</published>
     <updated>2017-06-02T12:38:19.000Z</updated>
     
@@ -835,25 +835,25 @@
     
     </summary>
     
-      <category term="好文分享" scheme="http://yoursite.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
+      <category term="好文分享" scheme="http://joveyzheng.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="译文" scheme="http://yoursite.com/tags/%E8%AF%91%E6%96%87/"/>
+      <category term="译文" scheme="http://joveyzheng.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="Web Development" scheme="http://yoursite.com/tags/Web-Development/"/>
+      <category term="Web Development" scheme="http://joveyzheng.com/tags/Web-Development/"/>
     
-      <category term="Chrome Extensions" scheme="http://yoursite.com/tags/Chrome-Extensions/"/>
+      <category term="Chrome Extensions" scheme="http://joveyzheng.com/tags/Chrome-Extensions/"/>
     
-      <category term="Web Designers" scheme="http://yoursite.com/tags/Web-Designers/"/>
+      <category term="Web Designers" scheme="http://joveyzheng.com/tags/Web-Designers/"/>
     
-      <category term="Developers" scheme="http://yoursite.com/tags/Developers/"/>
+      <category term="Developers" scheme="http://joveyzheng.com/tags/Developers/"/>
     
   </entry>
   
   <entry>
     <title>博客的新版布局</title>
-    <link href="http://yoursite.com/2015/12/01/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%96%B0%E7%89%88%E5%B8%83%E5%B1%80/"/>
-    <id>http://yoursite.com/2015/12/01/博客的新版布局/</id>
+    <link href="http://joveyzheng.com/2015/12/01/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%96%B0%E7%89%88%E5%B8%83%E5%B1%80/"/>
+    <id>http://joveyzheng.com/2015/12/01/博客的新版布局/</id>
     <published>2015-12-01T06:12:53.000Z</published>
     <updated>2017-06-14T15:29:32.000Z</updated>
     
@@ -880,23 +880,23 @@
     
     </summary>
     
-      <category term="杂谈" scheme="http://yoursite.com/categories/%E6%9D%82%E8%B0%88/"/>
+      <category term="杂谈" scheme="http://joveyzheng.com/categories/%E6%9D%82%E8%B0%88/"/>
     
     
-      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
+      <category term="blog" scheme="http://joveyzheng.com/tags/blog/"/>
     
-      <category term="next" scheme="http://yoursite.com/tags/next/"/>
+      <category term="next" scheme="http://joveyzheng.com/tags/next/"/>
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="http://joveyzheng.com/tags/hexo/"/>
     
-      <category term="pisces" scheme="http://yoursite.com/tags/pisces/"/>
+      <category term="pisces" scheme="http://joveyzheng.com/tags/pisces/"/>
     
   </entry>
   
   <entry>
     <title>5 大 Web 开发与设计网站</title>
-    <link href="http://yoursite.com/2015/11/17/5%20%E5%A4%A7%20Web%20%E5%BC%80%E5%8F%91%E4%B8%8E%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99/"/>
-    <id>http://yoursite.com/2015/11/17/5 大 Web 开发与设计网站/</id>
+    <link href="http://joveyzheng.com/2015/11/17/5%20%E5%A4%A7%20Web%20%E5%BC%80%E5%8F%91%E4%B8%8E%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99/"/>
+    <id>http://joveyzheng.com/2015/11/17/5 大 Web 开发与设计网站/</id>
     <published>2015-11-17T02:23:56.000Z</published>
     <updated>2017-06-02T12:38:37.000Z</updated>
     
@@ -922,23 +922,23 @@
     
     </summary>
     
-      <category term="好文分享" scheme="http://yoursite.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
+      <category term="好文分享" scheme="http://joveyzheng.com/categories/%E5%A5%BD%E6%96%87%E5%88%86%E4%BA%AB/"/>
     
     
-      <category term="译文" scheme="http://yoursite.com/tags/%E8%AF%91%E6%96%87/"/>
+      <category term="译文" scheme="http://joveyzheng.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="Web Dedign" scheme="http://yoursite.com/tags/Web-Dedign/"/>
+      <category term="Web Dedign" scheme="http://joveyzheng.com/tags/Web-Dedign/"/>
     
-      <category term="Web Development" scheme="http://yoursite.com/tags/Web-Development/"/>
+      <category term="Web Development" scheme="http://joveyzheng.com/tags/Web-Development/"/>
     
-      <category term="Websites" scheme="http://yoursite.com/tags/Websites/"/>
+      <category term="Websites" scheme="http://joveyzheng.com/tags/Websites/"/>
     
   </entry>
   
   <entry>
     <title>使用 Git 管理项目 - reset 与 rebase</title>
-    <link href="http://yoursite.com/2015/11/04/%E4%BD%BF%E7%94%A8%20Git%20%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%20-%20reset%20%E4%B8%8E%20rebase/"/>
-    <id>http://yoursite.com/2015/11/04/使用 Git 管理项目 - reset 与 rebase/</id>
+    <link href="http://joveyzheng.com/2015/11/04/%E4%BD%BF%E7%94%A8%20Git%20%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%20-%20reset%20%E4%B8%8E%20rebase/"/>
+    <id>http://joveyzheng.com/2015/11/04/使用 Git 管理项目 - reset 与 rebase/</id>
     <published>2015-11-04T09:49:09.000Z</published>
     <updated>2017-06-14T15:29:34.000Z</updated>
     
@@ -988,23 +988,23 @@
     
     </summary>
     
-      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+      <category term="Git" scheme="http://joveyzheng.com/categories/Git/"/>
     
     
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+      <category term="git" scheme="http://joveyzheng.com/tags/git/"/>
     
-      <category term="项目管理" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+      <category term="项目管理" scheme="http://joveyzheng.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     
-      <category term="reset" scheme="http://yoursite.com/tags/reset/"/>
+      <category term="reset" scheme="http://joveyzheng.com/tags/reset/"/>
     
-      <category term="rebase" scheme="http://yoursite.com/tags/rebase/"/>
+      <category term="rebase" scheme="http://joveyzheng.com/tags/rebase/"/>
     
   </entry>
   
   <entry>
     <title>ECharts - 数据图表的使用</title>
-    <link href="http://yoursite.com/2015/10/16/ECharts%20-%20%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2015/10/16/ECharts - 数据图表的使用/</id>
+    <link href="http://joveyzheng.com/2015/10/16/ECharts%20-%20%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://joveyzheng.com/2015/10/16/ECharts - 数据图表的使用/</id>
     <published>2015-10-16T10:14:23.000Z</published>
     <updated>2017-06-14T15:29:29.000Z</updated>
     
@@ -1065,19 +1065,19 @@
     
     </summary>
     
-      <category term="笔记随笔" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
+      <category term="笔记随笔" scheme="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="ECharts" scheme="http://yoursite.com/tags/ECharts/"/>
+      <category term="ECharts" scheme="http://joveyzheng.com/tags/ECharts/"/>
     
-      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+      <category term="js" scheme="http://joveyzheng.com/tags/js/"/>
     
   </entry>
   
   <entry>
     <title>更新 Github 的 Fork 代码</title>
-    <link href="http://yoursite.com/2015/10/06/%E6%9B%B4%E6%96%B0%20Github%20%E7%9A%84%20Fork%20%E4%BB%A3%E7%A0%81/"/>
-    <id>http://yoursite.com/2015/10/06/更新 Github 的 Fork 代码/</id>
+    <link href="http://joveyzheng.com/2015/10/06/%E6%9B%B4%E6%96%B0%20Github%20%E7%9A%84%20Fork%20%E4%BB%A3%E7%A0%81/"/>
+    <id>http://joveyzheng.com/2015/10/06/更新 Github 的 Fork 代码/</id>
     <published>2015-10-06T08:46:12.000Z</published>
     <updated>2017-06-02T12:39:52.000Z</updated>
     
@@ -1116,19 +1116,19 @@
     
     </summary>
     
-      <category term="笔记随笔" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
+      <category term="笔记随笔" scheme="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="项目管理" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+      <category term="项目管理" scheme="http://joveyzheng.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     
-      <category term="Git" scheme="http://yoursite.com/tags/Git/"/>
+      <category term="Git" scheme="http://joveyzheng.com/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>使用 Hexo + NexT 搭建静态博客</title>
-    <link href="http://yoursite.com/2015/09/18/%E4%BD%BF%E7%94%A8%20Hexo%20+%20NexT%20%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2015/09/18/使用 Hexo + NexT 搭建静态博客/</id>
+    <link href="http://joveyzheng.com/2015/09/18/%E4%BD%BF%E7%94%A8%20Hexo%20+%20NexT%20%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://joveyzheng.com/2015/09/18/使用 Hexo + NexT 搭建静态博客/</id>
     <published>2015-09-18T07:06:37.000Z</published>
     <updated>2017-06-14T15:29:33.000Z</updated>
     
@@ -1207,23 +1207,23 @@
     
     </summary>
     
-      <category term="笔记随笔" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
+      <category term="笔记随笔" scheme="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://joveyzheng.com/tags/Hexo/"/>
     
-      <category term="NexT" scheme="http://yoursite.com/tags/NexT/"/>
+      <category term="NexT" scheme="http://joveyzheng.com/tags/NexT/"/>
     
-      <category term="github" scheme="http://yoursite.com/tags/github/"/>
+      <category term="github" scheme="http://joveyzheng.com/tags/github/"/>
     
-      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="http://joveyzheng.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
   <entry>
     <title>NPM 一些常用命令</title>
-    <link href="http://yoursite.com/2015/09/17/NPM%20%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2015/09/17/NPM 一些常用命令/</id>
+    <link href="http://joveyzheng.com/2015/09/17/NPM%20%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://joveyzheng.com/2015/09/17/NPM 一些常用命令/</id>
     <published>2015-09-17T07:57:11.000Z</published>
     <updated>2017-06-02T13:27:56.000Z</updated>
     
@@ -1285,21 +1285,21 @@
     
     </summary>
     
-      <category term="开发日常" scheme="http://yoursite.com/categories/%E5%BC%80%E5%8F%91%E6%97%A5%E5%B8%B8/"/>
+      <category term="开发日常" scheme="http://joveyzheng.com/categories/%E5%BC%80%E5%8F%91%E6%97%A5%E5%B8%B8/"/>
     
     
-      <category term="npm" scheme="http://yoursite.com/tags/npm/"/>
+      <category term="npm" scheme="http://joveyzheng.com/tags/npm/"/>
     
-      <category term="module" scheme="http://yoursite.com/tags/module/"/>
+      <category term="module" scheme="http://joveyzheng.com/tags/module/"/>
     
-      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+      <category term="nodejs" scheme="http://joveyzheng.com/tags/nodejs/"/>
     
   </entry>
   
   <entry>
     <title>Brunch：快捷的HTML5构建工具</title>
-    <link href="http://yoursite.com/2015/09/08/Brunch%EF%BC%9A%E5%BF%AB%E6%8D%B7%E7%9A%84HTML5%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
-    <id>http://yoursite.com/2015/09/08/Brunch：快捷的HTML5构建工具/</id>
+    <link href="http://joveyzheng.com/2015/09/08/Brunch%EF%BC%9A%E5%BF%AB%E6%8D%B7%E7%9A%84HTML5%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
+    <id>http://joveyzheng.com/2015/09/08/Brunch：快捷的HTML5构建工具/</id>
     <published>2015-09-08T06:48:25.000Z</published>
     <updated>2017-06-14T15:29:30.000Z</updated>
     
@@ -1356,19 +1356,19 @@
     
     </summary>
     
-      <category term="笔记随笔" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
+      <category term="笔记随笔" scheme="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="Brunch" scheme="http://yoursite.com/tags/Brunch/"/>
+      <category term="Brunch" scheme="http://joveyzheng.com/tags/Brunch/"/>
     
-      <category term="构建工具" scheme="http://yoursite.com/tags/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
+      <category term="构建工具" scheme="http://joveyzheng.com/tags/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>使用 Git 管理项目-初始化</title>
-    <link href="http://yoursite.com/2015/09/07/%E4%BD%BF%E7%94%A8%20Git%20%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE-%E5%88%9D%E5%A7%8B%E5%8C%96/"/>
-    <id>http://yoursite.com/2015/09/07/使用 Git 管理项目-初始化/</id>
+    <link href="http://joveyzheng.com/2015/09/07/%E4%BD%BF%E7%94%A8%20Git%20%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE-%E5%88%9D%E5%A7%8B%E5%8C%96/"/>
+    <id>http://joveyzheng.com/2015/09/07/使用 Git 管理项目-初始化/</id>
     <published>2015-09-07T07:57:59.000Z</published>
     <updated>2017-06-02T13:30:51.000Z</updated>
     
@@ -1398,19 +1398,19 @@
     
     </summary>
     
-      <category term="Git" scheme="http://yoursite.com/categories/Git/"/>
+      <category term="Git" scheme="http://joveyzheng.com/categories/Git/"/>
     
     
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+      <category term="git" scheme="http://joveyzheng.com/tags/git/"/>
     
-      <category term="项目管理" scheme="http://yoursite.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
+      <category term="项目管理" scheme="http://joveyzheng.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>生成 SSH keys</title>
-    <link href="http://yoursite.com/2015/09/07/%E7%94%9F%E6%88%90SSH%20keys/"/>
-    <id>http://yoursite.com/2015/09/07/生成SSH keys/</id>
+    <link href="http://joveyzheng.com/2015/09/07/%E7%94%9F%E6%88%90SSH%20keys/"/>
+    <id>http://joveyzheng.com/2015/09/07/生成SSH keys/</id>
     <published>2015-09-07T07:04:33.000Z</published>
     <updated>2017-06-02T13:32:49.000Z</updated>
     
@@ -1429,14 +1429,14 @@
     
     </summary>
     
-      <category term="笔记随笔" scheme="http://yoursite.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
+      <category term="笔记随笔" scheme="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+      <category term="git" scheme="http://joveyzheng.com/tags/git/"/>
     
-      <category term="SSH" scheme="http://yoursite.com/tags/SSH/"/>
+      <category term="SSH" scheme="http://joveyzheng.com/tags/SSH/"/>
     
-      <category term="加密" scheme="http://yoursite.com/tags/%E5%8A%A0%E5%AF%86/"/>
+      <category term="加密" scheme="http://joveyzheng.com/tags/%E5%8A%A0%E5%AF%86/"/>
     
   </entry>
   
