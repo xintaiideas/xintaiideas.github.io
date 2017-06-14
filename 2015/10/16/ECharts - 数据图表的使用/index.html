@@ -98,16 +98,16 @@
 <meta property="og:url" content="http://yoursite.com/2015/10/16/ECharts - 数据图表的使用/index.html">
 <meta property="og:site_name" content="Jovey&#39;s Notes">
 <meta property="og:description" content="关于ECharts（ECharts）ECharts 是百度提供的一款开源、功能强大的数据可视化产品。主要提供折线图、柱状图、散点图、K线图、饼图、雷达图、地图、和弦图、力导向布局图、仪表盘以及漏斗图。 特性 拖拽重计算 数据视图 多图联动 值域漫游 炫光特效……  准备下载 ECharts 静态包【echarts-2.2.7】，也可以直接使用链接进行加载。建议下载静态包，避免官方 更新新特性 时">
-<meta property="og:image" content="http://yoursite.com/blog/images/article_img/3.png">
-<meta property="og:image" content="http://yoursite.com/blog/images/article_img/3-1.png">
-<meta property="og:image" content="http://yoursite.com/blog/images/article_img/3-2.png">
-<meta property="og:image" content="http://yoursite.com/blog/images/article_img/3-3.png">
-<meta property="og:image" content="http://yoursite.com/blog/images/article_img/3-4.png">
-<meta property="og:updated_time" content="2017-06-02T12:40:04.000Z">
+<meta property="og:image" content="http://yoursite.com/static/images/3.png">
+<meta property="og:image" content="http://yoursite.com/static/images/3-1.png">
+<meta property="og:image" content="http://yoursite.com/static/images/3-2.png">
+<meta property="og:image" content="http://yoursite.com/static/images/3-3.png">
+<meta property="og:image" content="http://yoursite.com/static/images/3-4.png">
+<meta property="og:updated_time" content="2017-06-14T15:29:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ECharts - 数据图表的使用">
 <meta name="twitter:description" content="关于ECharts（ECharts）ECharts 是百度提供的一款开源、功能强大的数据可视化产品。主要提供折线图、柱状图、散点图、K线图、饼图、雷达图、地图、和弦图、力导向布局图、仪表盘以及漏斗图。 特性 拖拽重计算 数据视图 多图联动 值域漫游 炫光特效……  准备下载 ECharts 静态包【echarts-2.2.7】，也可以直接使用链接进行加载。建议下载静态包，避免官方 更新新特性 时">
-<meta name="twitter:image" content="http://yoursite.com/blog/images/article_img/3.png">
+<meta name="twitter:image" content="http://yoursite.com/static/images/3.png">
 
 
 
@@ -201,7 +201,7 @@
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description">心有猛虎 细嗅蔷薇</h1>
+        <p class="site-subtitle">心有猛虎 细嗅蔷薇</p>
       
   </div>
 
@@ -350,14 +350,14 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
             
             
               
                 ECharts - 数据图表的使用
               
             
-          </h2>
+          </h1>
         
 
         <div class="post-meta">
@@ -448,7 +448,7 @@
       
 
       
-        <p><img src="/blog/images/article_img/3.png" alt="ECharts"></p>
+        <p><img src="/static/images/3.png" alt="ECharts"></p>
 <h1 id="关于ECharts（ECharts）"><a href="#关于ECharts（ECharts）" class="headerlink" title="关于ECharts（ECharts）"></a>关于ECharts（<a href="http://echarts.baidu.com/doc/about.html" target="_blank" rel="external">ECharts</a>）</h1><p>ECharts 是百度提供的一款开源、功能强大的数据可视化产品。<br>主要提供折线图、柱状图、散点图、K线图、饼图、雷达图、地图、和弦图、力导向布局图、仪表盘以及漏斗图。</p>
 <h1 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h1><ul>
 <li>拖拽重计算</li>
@@ -464,13 +464,13 @@
 <h4 id="2-引入-echarts-js-："><a href="#2-引入-echarts-js-：" class="headerlink" title="2. 引入 echarts.js ："></a>2. 引入 <code>echarts.js</code> ：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;http://echarts.baidu.com/build/dist/echarts.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
 <h4 id="3-添加模块加载器配置-echarts-和所需图表的路径（相对路径为从当前页面链接到echarts-js），引入图表文件见引入-ECharts2："><a href="#3-添加模块加载器配置-echarts-和所需图表的路径（相对路径为从当前页面链接到echarts-js），引入图表文件见引入-ECharts2：" class="headerlink" title="3. 添加模块加载器配置 echarts 和所需图表的路径（相对路径为从当前页面链接到echarts.js），引入图表文件见引入 ECharts2："></a>3. 添加模块加载器配置 echarts 和所需图表的路径（相对路径为从当前页面链接到echarts.js），引入图表文件见<a href="http://echarts.baidu.com/doc/doc.html#引入ECharts2" target="_blank" rel="external">引入 ECharts2</a>：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">    // 路径配置</div><div class="line">    require.config(&#123;</div><div class="line">        paths: &#123;</div><div class="line">          echarts: &apos;http://echarts.baidu.com/build/dist&apos;</div><div class="line">        &#125;</div><div class="line">     &#125;);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
 <h4 id="4-动态加载echarts和所需图表，回调函数中可以初始化图表并驱动图表的生成，option见API-amp-Doc："><a href="#4-动态加载echarts和所需图表，回调函数中可以初始化图表并驱动图表的生成，option见API-amp-Doc：" class="headerlink" title="4. 动态加载echarts和所需图表，回调函数中可以初始化图表并驱动图表的生成，option见API &amp; Doc："></a>4. 动态加载echarts和所需图表，回调函数中可以初始化图表并驱动图表的生成，option见<a href="http://echarts.baidu.com/doc/doc.html#Option" target="_blank" rel="external">API &amp; Doc</a>：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">require(</div><div class="line">    [</div><div class="line">        &apos;echarts&apos;,</div><div class="line">        &apos;echarts/chart/bar&apos; // 使用柱状图就加载bar模块，按需加载</div><div class="line">    ],</div><div class="line">    function (ec) &#123;</div><div class="line">        // 基于准备好的dom，初始化echarts图表</div><div class="line">        var myChart = ec.init(document.getElementById(&apos;main&apos;));</div><div class="line"></div><div class="line">        var option = &#123;</div><div class="line">            tooltip: &#123;</div><div class="line">                show: true</div><div class="line">            &#125;,</div><div class="line">            legend: &#123;</div><div class="line">                data:[&apos;销量&apos;]</div><div class="line">            &#125;,</div><div class="line">            xAxis : [</div><div class="line">                &#123;</div><div class="line">                    type : &apos;category&apos;,</div><div class="line">                    data : [&quot;衬衫&quot;,&quot;羊毛衫&quot;,&quot;雪纺衫&quot;,&quot;裤子&quot;,&quot;高跟鞋&quot;,&quot;袜子&quot;]</div><div class="line">                &#125;</div><div class="line">            ],</div><div class="line">            yAxis : [</div><div class="line">                &#123;</div><div class="line">                    type : &apos;value&apos;</div><div class="line">                &#125;</div><div class="line">            ],</div><div class="line">            series : [</div><div class="line">                &#123;</div><div class="line">                    &quot;name&quot;:&quot;销量&quot;,</div><div class="line">                    &quot;type&quot;:&quot;bar&quot;,</div><div class="line">                    &quot;data&quot;:[5, 20, 40, 10, 10, 20]</div><div class="line">                &#125;</div><div class="line">            ]</div><div class="line">        &#125;;</div><div class="line"></div><div class="line">        // 为echarts对象加载数据</div><div class="line">        myChart.setOption(option);</div><div class="line">    &#125;</div><div class="line">);</div></pre></td></tr></table></figure>
-<h4 id="5-最后的样子："><a href="#5-最后的样子：" class="headerlink" title="5. 最后的样子："></a>5. 最后的样子：</h4><p><img src="/blog/images/article_img/3-1.png" alt=""></p>
+<h4 id="5-最后的样子："><a href="#5-最后的样子：" class="headerlink" title="5. 最后的样子："></a>5. 最后的样子：</h4><p><img src="/static/images/3-1.png" alt=""></p>
 <h1 id="重点-option-部分相关配置说明"><a href="#重点-option-部分相关配置说明" class="headerlink" title="重点- option 部分相关配置说明"></a>重点- option 部分相关配置说明</h1><p>用户可以在 option 配置里自定义图标的样式。</p>
 <ul>
-<li><p>title 标题：<br><img src="/blog/images/article_img/3-2.png" alt=""></p>
+<li><p>title 标题：<br><img src="/static/images/3-2.png" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title : &#123;</div><div class="line">    text: &apos;某地区蒸发量和降水量&apos;,  //文本</div><div class="line">    subtext: &apos;纯属虚构&apos;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p>toolbox 便捷的工具：<br><img src="/blog/images/article_img/3-3.png" alt=""></p>
+<li><p>toolbox 便捷的工具：<br><img src="/static/images/3-3.png" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">toolbox: &#123;</div><div class="line">    show : true,  //是否显示工具栏</div><div class="line">    feature : &#123;  //特性</div><div class="line">        mark : &#123;show: true&#125;,  //辅助线</div><div class="line">        dataView : &#123;show: true, readOnly: false&#125;,  //数据视图</div><div class="line">        magicType : &#123;show: true, type: [&apos;line&apos;, &apos;bar&apos;]&#125;,  //切换视图（折线/柱状）</div><div class="line">        restore : &#123;show: true&#125;,  //重新加载视图</div><div class="line">        saveAsImage : &#123;show: true&#125;  //保存该视图为图片</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 <li><p>series 数据列表：</p>
@@ -479,7 +479,7 @@
 <li><p>xAxis ： X 轴</p>
 </li>
 <li>yAxis ： Y 轴</li>
-<li>legend ：<br><img src="/blog/images/article_img/3-4.png" alt=""><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">legend: &#123;</div><div class="line">    orient : &apos;vertical&apos;,  //方向“垂直”，默认从左向右横向排列</div><div class="line">    x : &apos;left&apos;,  //位于 X 轴左侧，默认顶部居中</div><div class="line">    data:[&apos;直接访问&apos;,&apos;邮件营销&apos;,&apos;联盟广告&apos;,&apos;视频广告&apos;,&apos;搜索引擎&apos;]  //显示文本</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li>legend ：<br><img src="/static/images/3-4.png" alt=""><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">legend: &#123;</div><div class="line">    orient : &apos;vertical&apos;,  //方向“垂直”，默认从左向右横向排列</div><div class="line">    x : &apos;left&apos;,  //位于 X 轴左侧，默认顶部居中</div><div class="line">    data:[&apos;直接访问&apos;,&apos;邮件营销&apos;,&apos;联盟广告&apos;,&apos;视频广告&apos;,&apos;搜索引擎&apos;]  //显示文本</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>更多配置可在<a href="http://echarts.baidu.com/doc/example.html" target="_blank" rel="external">【实例】</a>中点开测试。</p>
@@ -654,8 +654,8 @@
                alt="Jovey Zheng" />
           <p class="site-author-name" itemprop="name">Jovey Zheng</p>
            
-              <p class="site-description motion-element" itemprop="description"></p>
-           
+              <p class="site-description motion-element" itemprop="description">Be a better man ...</p>
+          
         </div>
         <nav class="site-state motion-element">
 

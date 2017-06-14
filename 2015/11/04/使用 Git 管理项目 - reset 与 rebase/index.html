@@ -98,13 +98,13 @@
 <meta property="og:url" content="http://yoursite.com/2015/11/04/使用 Git 管理项目 - reset 与 rebase/index.html">
 <meta property="og:site_name" content="Jovey&#39;s Notes">
 <meta property="og:description" content="在日常管理项目的过程中，可能会遇到提交的 commit/merge 并不是想要的，或是操作失误提交了，那么此时我们需要把不想要的 commit/merge 取消掉，如果做到呢？Git 为我们提供了一个 reset command，很好地解决了这个问题。 reset1. 命令说明1$ git reset [--hard|soft|mixed|merge|keep] [&amp;lt;commit&amp;gt;|&amp;">
-<meta property="og:image" content="http://yoursite.com/blog/images/article_img/4.png">
-<meta property="og:image" content="http://yoursite.com/blog/images/article_img/5.png">
-<meta property="og:updated_time" content="2017-06-02T13:29:29.000Z">
+<meta property="og:image" content="http://yoursite.com/static/images/4.png">
+<meta property="og:image" content="http://yoursite.com/static/images/5.png">
+<meta property="og:updated_time" content="2017-06-14T15:29:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用 Git 管理项目 - reset 与 rebase">
 <meta name="twitter:description" content="在日常管理项目的过程中，可能会遇到提交的 commit/merge 并不是想要的，或是操作失误提交了，那么此时我们需要把不想要的 commit/merge 取消掉，如果做到呢？Git 为我们提供了一个 reset command，很好地解决了这个问题。 reset1. 命令说明1$ git reset [--hard|soft|mixed|merge|keep] [&amp;lt;commit&amp;gt;|&amp;">
-<meta name="twitter:image" content="http://yoursite.com/blog/images/article_img/4.png">
+<meta name="twitter:image" content="http://yoursite.com/static/images/4.png">
 
 
 
@@ -198,7 +198,7 @@
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description">心有猛虎 细嗅蔷薇</h1>
+        <p class="site-subtitle">心有猛虎 细嗅蔷薇</p>
       
   </div>
 
@@ -347,14 +347,14 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
             
             
               
                 使用 Git 管理项目 - reset 与 rebase
               
             
-          </h2>
+          </h1>
         
 
         <div class="post-meta">
@@ -474,7 +474,7 @@
 <p>此时用 <code>$ git status</code>  查看会看到：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ git status</div><div class="line">rebase in progress; onto 9cbc329</div><div class="line">You are currently rebasing branch &apos;master&apos; on &apos;9cbc329&apos;.</div><div class="line">  (all conflicts fixed: run &quot;git rebase --continue&quot;)</div><div class="line"></div><div class="line">nothing to commit, working directory clean</div></pre></td></tr></table></figure></p>
 <p>紧接着我们需要执行 <code>$ git rebase --continue</code> 操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ git rebase --continue</div><div class="line">[detached HEAD 2bd1903...d987ebf] squash commit on rebase</div><div class="line"> Date: Tue Nov 3 10:09:43 2015 +0800</div><div class="line"> 1 file changed, 149 insertions(+), 154 deletions(-)</div><div class="line"> rewrite test.js (72%)</div><div class="line">Successfully rebased and updated refs/heads/master.</div></pre></td></tr></table></figure></p>
 <p>最后我们需要把修改合并好的 commit push 到远程仓库上：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push origin [branch] -f</div></pre></td></tr></table></figure></p>
-<p>到此为止，整个 rebase 操作都已完成。<br>你会看到类似：<br><img src="/blog/images/article_img/4.png" alt="before"><br>变成类似：<br><img src="/blog/images/article_img/5.png" alt="after"></p>
+<p>到此为止，整个 rebase 操作都已完成。<br>你会看到类似：<br><img src="/static/images/4.png" alt="before"><br>变成类似：<br><img src="/static/images/5.png" alt="after"></p>
 <h1 id="简略的指导"><a href="#简略的指导" class="headerlink" title="简略的指导"></a>简略的指导</h1><p>在 VIM 的操作界面下，需要按 <code>I/Insert</code> 键进行插入修改文本操作，修改完文本之后需要按 <code>Esc</code> 键退出编辑状态，然后输入 <code>:q</code> 是离开，输入 <code>:!q</code> 是强制离开，输入 <code>:x</code> 是保存修改并离开。<br>在 rebase 修改文本结束后需要输入 <code>:x</code> 进行保存。</p>
 
       
@@ -646,8 +646,8 @@
                alt="Jovey Zheng" />
           <p class="site-author-name" itemprop="name">Jovey Zheng</p>
            
-              <p class="site-description motion-element" itemprop="description"></p>
-           
+              <p class="site-description motion-element" itemprop="description">Be a better man ...</p>
+          
         </div>
         <nav class="site-state motion-element">
 

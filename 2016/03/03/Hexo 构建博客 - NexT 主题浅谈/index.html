@@ -98,14 +98,14 @@
 <meta property="og:url" content="http://yoursite.com/2016/03/03/Hexo 构建博客 - NexT 主题浅谈/index.html">
 <meta property="og:site_name" content="Jovey&#39;s Notes">
 <meta property="og:description" content="利用 Github 所提供的 Github Page 去构建静态的网站已经变得越来越流行，如果还不了解怎么入门，可以阅读我之前的一篇文章「使用Hexo + Next搭建静态博客」。当然构建博客的方法不是只有一种，你也可以尝试其他方法，而本文主要是针对 Hexo 去叙述的。  可能看过「使用 Hexo + Next 搭建静态博客」这篇文章的同学都已经构建好了属于自己的博客了，那么接下来要说的就是关">
-<meta property="og:image" content="http://yoursite.com/blog/images/article_img/19-1.png">
-<meta property="og:image" content="http://yoursite.com/blog/images/article_img/19-2.png">
-<meta property="og:image" content="http://yoursite.com/blog/images/article_img/19-3.png">
-<meta property="og:updated_time" content="2017-06-02T13:26:38.000Z">
+<meta property="og:image" content="http://yoursite.com/static/images/19-1.png">
+<meta property="og:image" content="http://yoursite.com/static/images/19-2.png">
+<meta property="og:image" content="http://yoursite.com/static/images/19-3.png">
+<meta property="og:updated_time" content="2017-06-14T15:29:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 构建博客 - NexT 主题浅谈">
 <meta name="twitter:description" content="利用 Github 所提供的 Github Page 去构建静态的网站已经变得越来越流行，如果还不了解怎么入门，可以阅读我之前的一篇文章「使用Hexo + Next搭建静态博客」。当然构建博客的方法不是只有一种，你也可以尝试其他方法，而本文主要是针对 Hexo 去叙述的。  可能看过「使用 Hexo + Next 搭建静态博客」这篇文章的同学都已经构建好了属于自己的博客了，那么接下来要说的就是关">
-<meta name="twitter:image" content="http://yoursite.com/blog/images/article_img/19-1.png">
+<meta name="twitter:image" content="http://yoursite.com/static/images/19-1.png">
 
 
 
@@ -199,7 +199,7 @@
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description">心有猛虎 细嗅蔷薇</h1>
+        <p class="site-subtitle">心有猛虎 细嗅蔷薇</p>
       
   </div>
 
@@ -348,14 +348,14 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
+          <h1 class="post-title" itemprop="name headline">
             
             
               
                 Hexo 构建博客 - NexT 主题浅谈
               
             
-          </h2>
+          </h1>
         
 
         <div class="post-meta">
@@ -467,7 +467,7 @@
 </li>
 </ol>
 <p>重新生成一次，你会在 <code>./public</code> 文件夹中看到 <code>atom.xml</code> 文件。然后启动服务器查看是否有效，之后再部署到 <code>Github</code> 中。</p>
-<p>最后你可以看到：<br><img src="/blog/images/article_img/19-1.png" alt="效果"></p>
+<p>最后你可以看到：<br><img src="/static/images/19-1.png" alt="效果"></p>
 <h1 id="修改文件后不生效"><a href="#修改文件后不生效" class="headerlink" title="修改文件后不生效"></a>修改文件后不生效</h1><blockquote>
 <p>有时候会发现，明明修改了文件的代码，然而没有生效。</p>
 </blockquote>
@@ -475,8 +475,8 @@
 <p>然后执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$hexo g</div></pre></td></tr></table></figure></p>
 <p>重新生成一次即可。</p>
 <h1 id="社交链接图标"><a href="#社交链接图标" class="headerlink" title="社交链接图标"></a>社交链接图标</h1><p>说明一下，这些图标都是出自 <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank" rel="external"><code>FontAwesome - 4.4.0</code></a>，所以你可以根据自己的需求去修改图标。</p>
-<p>实际效果：<br><img src="/blog/images/article_img/19-2.png" alt="效果"></p>
-<p>有的同学会发现自己的图标是个地球：<br><img src="/blog/images/article_img/19-3.png" alt="效果"></p>
+<p>实际效果：<br><img src="/static/images/19-2.png" alt="效果"></p>
+<p>有的同学会发现自己的图标是个地球：<br><img src="/static/images/19-3.png" alt="效果"></p>
 <p>需要配置的是主题文件夹下的 <code>_config.yml</code>，<strong>注意：命名需要一致，包括大小写</strong>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"># Social links</div><div class="line">social:</div><div class="line">  GitHub: https://github.com/XXX</div><div class="line">  Twitter: https://twitter.com/XXX</div><div class="line">  Weibo: http://weibo.com/XXX</div><div class="line">  Facebook: https://www.facebook.com/XXX</div><div class="line">  JianShu: http://www.jianshu.com/XXX</div><div class="line"></div><div class="line"># Social Icons</div><div class="line">social_icons:</div><div class="line">  enable: true</div><div class="line">  # Icon Mappings</div><div class="line">  GitHub: github</div><div class="line">  Twitter: twitter</div><div class="line">  Weibo: weibo</div><div class="line">  Facebook: facebook-square</div><div class="line">  JianShu: heartbeat</div></pre></td></tr></table></figure></p>
 <h1 id="阅读次数"><a href="#阅读次数" class="headerlink" title="阅读次数"></a>阅读次数</h1><p>简单介绍一下此功能的做法。</p>
 <ol>
@@ -660,8 +660,8 @@
                alt="Jovey Zheng" />
           <p class="site-author-name" itemprop="name">Jovey Zheng</p>
            
-              <p class="site-description motion-element" itemprop="description"></p>
-           
+              <p class="site-description motion-element" itemprop="description">Be a better man ...</p>
+          
         </div>
         <nav class="site-state motion-element">
 

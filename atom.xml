@@ -123,7 +123,7 @@
     <link href="http://yoursite.com/2016/03/03/Hexo%20%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%20-%20NexT%20%E4%B8%BB%E9%A2%98%E6%B5%85%E8%B0%88/"/>
     <id>http://yoursite.com/2016/03/03/Hexo 构建博客 - NexT 主题浅谈/</id>
     <published>2016-03-03T06:16:35.000Z</published>
-    <updated>2017-06-02T13:26:38.000Z</updated>
+    <updated>2017-06-14T15:29:28.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>利用 <a href="https://github.com/" target="_blank" rel="external">Github</a> 所提供的 <strong>Github Page</strong> 去构建静态的网站已经变得越来越流行，如果还不了解怎么入门，可以阅读我之前的一篇文章<a href="http://www.jianshu.com/p/f66103553c45" target="_blank" rel="external">「使用Hexo + Next搭建静态博客」</a>。当然构建博客的方法不是只有一种，你也可以尝试其他方法，而本文主要是针对 <strong>Hexo</strong> 去叙述的。</p>
@@ -146,7 +146,7 @@
 </li>
 </ol>
 <p>重新生成一次，你会在 <code>./public</code> 文件夹中看到 <code>atom.xml</code> 文件。然后启动服务器查看是否有效，之后再部署到 <code>Github</code> 中。</p>
-<p>最后你可以看到：<br><img src="/blog/images/article_img/19-1.png" alt="效果"></p>
+<p>最后你可以看到：<br><img src="/static/images/19-1.png" alt="效果"></p>
 <h1 id="修改文件后不生效"><a href="#修改文件后不生效" class="headerlink" title="修改文件后不生效"></a>修改文件后不生效</h1><blockquote>
 <p>有时候会发现，明明修改了文件的代码，然而没有生效。</p>
 </blockquote>
@@ -154,8 +154,8 @@
 <p>然后执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$hexo g</div></pre></td></tr></table></figure></p>
 <p>重新生成一次即可。</p>
 <h1 id="社交链接图标"><a href="#社交链接图标" class="headerlink" title="社交链接图标"></a>社交链接图标</h1><p>说明一下，这些图标都是出自 <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank" rel="external"><code>FontAwesome - 4.4.0</code></a>，所以你可以根据自己的需求去修改图标。</p>
-<p>实际效果：<br><img src="/blog/images/article_img/19-2.png" alt="效果"></p>
-<p>有的同学会发现自己的图标是个地球：<br><img src="/blog/images/article_img/19-3.png" alt="效果"></p>
+<p>实际效果：<br><img src="/static/images/19-2.png" alt="效果"></p>
+<p>有的同学会发现自己的图标是个地球：<br><img src="/static/images/19-3.png" alt="效果"></p>
 <p>需要配置的是主题文件夹下的 <code>_config.yml</code>，<strong>注意：命名需要一致，包括大小写</strong>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"># Social links</div><div class="line">social:</div><div class="line">  GitHub: https://github.com/XXX</div><div class="line">  Twitter: https://twitter.com/XXX</div><div class="line">  Weibo: http://weibo.com/XXX</div><div class="line">  Facebook: https://www.facebook.com/XXX</div><div class="line">  JianShu: http://www.jianshu.com/XXX</div><div class="line"></div><div class="line"># Social Icons</div><div class="line">social_icons:</div><div class="line">  enable: true</div><div class="line">  # Icon Mappings</div><div class="line">  GitHub: github</div><div class="line">  Twitter: twitter</div><div class="line">  Weibo: weibo</div><div class="line">  Facebook: facebook-square</div><div class="line">  JianShu: heartbeat</div></pre></td></tr></table></figure></p>
 <h1 id="阅读次数"><a href="#阅读次数" class="headerlink" title="阅读次数"></a>阅读次数</h1><p>简单介绍一下此功能的做法。</p>
 <ol>
@@ -855,13 +855,13 @@
     <link href="http://yoursite.com/2015/12/01/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%96%B0%E7%89%88%E5%B8%83%E5%B1%80/"/>
     <id>http://yoursite.com/2015/12/01/博客的新版布局/</id>
     <published>2015-12-01T06:12:53.000Z</published>
-    <updated>2017-06-02T12:38:29.000Z</updated>
+    <updated>2017-06-14T15:29:32.000Z</updated>
     
     <content type="html"><![CDATA[<p>今天兴致勃勃去查看了下 Next 主题的更新，发现已经有了新的版本，而且布局也更新了。所以马上就试了试，先来看看变化：</p>
-<h4 id="旧版"><a href="#旧版" class="headerlink" title="旧版"></a>旧版</h4><p><img src="/blog/images/article_img/old-1.png" alt="old-main"></p>
+<h4 id="旧版"><a href="#旧版" class="headerlink" title="旧版"></a>旧版</h4><p><img src="/static/images/old-1.png" alt="old-main"></p>
 <a id="more"></a>
-<p><img src="/blog/images/article_img/old-2.png" alt="old-detail"></p>
-<h4 id="新版"><a href="#新版" class="headerlink" title="新版"></a>新版</h4><p><img src="/blog/images/article_img/new-1.png" alt="new-main"><br><img src="/blog/images/article_img/new-2.png" alt="new-detail"></p>
+<p><img src="/static/images/old-2.png" alt="old-detail"></p>
+<h4 id="新版"><a href="#新版" class="headerlink" title="新版"></a>新版</h4><p><img src="/static/images/new-1.png" alt="new-main"><br><img src="/static/images/new-2.png" alt="new-detail"></p>
 <h2 id="主要改动"><a href="#主要改动" class="headerlink" title="主要改动"></a>主要改动</h2><ul>
 <li>修改了 <code>header</code> 的位置和布局</li>
 <li>添加了 FontAwsome 的图标</li>
@@ -876,7 +876,7 @@
     <summary type="html">
     
       &lt;p&gt;今天兴致勃勃去查看了下 Next 主题的更新，发现已经有了新的版本，而且布局也更新了。所以马上就试了试，先来看看变化：&lt;/p&gt;
-&lt;h4 id=&quot;旧版&quot;&gt;&lt;a href=&quot;#旧版&quot; class=&quot;headerlink&quot; title=&quot;旧版&quot;&gt;&lt;/a&gt;旧版&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/blog/images/article_img/old-1.png&quot; alt=&quot;old-main&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;旧版&quot;&gt;&lt;a href=&quot;#旧版&quot; class=&quot;headerlink&quot; title=&quot;旧版&quot;&gt;&lt;/a&gt;旧版&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/static/images/old-1.png&quot; alt=&quot;old-main&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -940,7 +940,7 @@
     <link href="http://yoursite.com/2015/11/04/%E4%BD%BF%E7%94%A8%20Git%20%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%20-%20reset%20%E4%B8%8E%20rebase/"/>
     <id>http://yoursite.com/2015/11/04/使用 Git 管理项目 - reset 与 rebase/</id>
     <published>2015-11-04T09:49:09.000Z</published>
-    <updated>2017-06-02T13:29:29.000Z</updated>
+    <updated>2017-06-14T15:29:34.000Z</updated>
     
     <content type="html"><![CDATA[<p>在日常管理项目的过程中，可能会遇到提交的 commit/merge 并不是想要的，或是操作失误提交了，那么此时我们需要把不想要的 commit/merge 取消掉，如果做到呢？Git 为我们提供了一个 <code>reset</code> command，很好地解决了这个问题。</p>
 <h1 id="reset"><a href="#reset" class="headerlink" title="reset"></a>reset</h1><h2 id="1-命令说明"><a href="#1-命令说明" class="headerlink" title="1. 命令说明"></a>1. 命令说明</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset [--hard|soft|mixed|merge|keep] [&lt;commit&gt;|&lt;HEAD&gt;]</div></pre></td></tr></table></figure>
@@ -971,7 +971,7 @@
 <p>此时用 <code>$ git status</code>  查看会看到：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ git status</div><div class="line">rebase in progress; onto 9cbc329</div><div class="line">You are currently rebasing branch &apos;master&apos; on &apos;9cbc329&apos;.</div><div class="line">  (all conflicts fixed: run &quot;git rebase --continue&quot;)</div><div class="line"></div><div class="line">nothing to commit, working directory clean</div></pre></td></tr></table></figure></p>
 <p>紧接着我们需要执行 <code>$ git rebase --continue</code> 操作：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ git rebase --continue</div><div class="line">[detached HEAD 2bd1903...d987ebf] squash commit on rebase</div><div class="line"> Date: Tue Nov 3 10:09:43 2015 +0800</div><div class="line"> 1 file changed, 149 insertions(+), 154 deletions(-)</div><div class="line"> rewrite test.js (72%)</div><div class="line">Successfully rebased and updated refs/heads/master.</div></pre></td></tr></table></figure></p>
 <p>最后我们需要把修改合并好的 commit push 到远程仓库上：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push origin [branch] -f</div></pre></td></tr></table></figure></p>
-<p>到此为止，整个 rebase 操作都已完成。<br>你会看到类似：<br><img src="/blog/images/article_img/4.png" alt="before"><br>变成类似：<br><img src="/blog/images/article_img/5.png" alt="after"></p>
+<p>到此为止，整个 rebase 操作都已完成。<br>你会看到类似：<br><img src="/static/images/4.png" alt="before"><br>变成类似：<br><img src="/static/images/5.png" alt="after"></p>
 <h1 id="简略的指导"><a href="#简略的指导" class="headerlink" title="简略的指导"></a>简略的指导</h1><p>在 VIM 的操作界面下，需要按 <code>I/Insert</code> 键进行插入修改文本操作，修改完文本之后需要按 <code>Esc</code> 键退出编辑状态，然后输入 <code>:q</code> 是离开，输入 <code>:!q</code> 是强制离开，输入 <code>:x</code> 是保存修改并离开。<br>在 rebase 修改文本结束后需要输入 <code>:x</code> 进行保存。</p>
 ]]></content>
     
@@ -1006,9 +1006,9 @@
     <link href="http://yoursite.com/2015/10/16/ECharts%20-%20%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://yoursite.com/2015/10/16/ECharts - 数据图表的使用/</id>
     <published>2015-10-16T10:14:23.000Z</published>
-    <updated>2017-06-02T12:40:04.000Z</updated>
+    <updated>2017-06-14T15:29:29.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/blog/images/article_img/3.png" alt="ECharts"></p>
+    <content type="html"><![CDATA[<p><img src="/static/images/3.png" alt="ECharts"></p>
 <h1 id="关于ECharts（ECharts）"><a href="#关于ECharts（ECharts）" class="headerlink" title="关于ECharts（ECharts）"></a>关于ECharts（<a href="http://echarts.baidu.com/doc/about.html" target="_blank" rel="external">ECharts</a>）</h1><p>ECharts 是百度提供的一款开源、功能强大的数据可视化产品。<br>主要提供折线图、柱状图、散点图、K线图、饼图、雷达图、地图、和弦图、力导向布局图、仪表盘以及漏斗图。</p>
 <h1 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h1><ul>
 <li>拖拽重计算</li>
@@ -1024,13 +1024,13 @@
 <h4 id="2-引入-echarts-js-："><a href="#2-引入-echarts-js-：" class="headerlink" title="2. 引入 echarts.js ："></a>2. 引入 <code>echarts.js</code> ：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;http://echarts.baidu.com/build/dist/echarts.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
 <h4 id="3-添加模块加载器配置-echarts-和所需图表的路径（相对路径为从当前页面链接到echarts-js），引入图表文件见引入-ECharts2："><a href="#3-添加模块加载器配置-echarts-和所需图表的路径（相对路径为从当前页面链接到echarts-js），引入图表文件见引入-ECharts2：" class="headerlink" title="3. 添加模块加载器配置 echarts 和所需图表的路径（相对路径为从当前页面链接到echarts.js），引入图表文件见引入 ECharts2："></a>3. 添加模块加载器配置 echarts 和所需图表的路径（相对路径为从当前页面链接到echarts.js），引入图表文件见<a href="http://echarts.baidu.com/doc/doc.html#引入ECharts2" target="_blank" rel="external">引入 ECharts2</a>：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">    // 路径配置</div><div class="line">    require.config(&#123;</div><div class="line">        paths: &#123;</div><div class="line">          echarts: &apos;http://echarts.baidu.com/build/dist&apos;</div><div class="line">        &#125;</div><div class="line">     &#125;);</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
 <h4 id="4-动态加载echarts和所需图表，回调函数中可以初始化图表并驱动图表的生成，option见API-amp-Doc："><a href="#4-动态加载echarts和所需图表，回调函数中可以初始化图表并驱动图表的生成，option见API-amp-Doc：" class="headerlink" title="4. 动态加载echarts和所需图表，回调函数中可以初始化图表并驱动图表的生成，option见API &amp; Doc："></a>4. 动态加载echarts和所需图表，回调函数中可以初始化图表并驱动图表的生成，option见<a href="http://echarts.baidu.com/doc/doc.html#Option" target="_blank" rel="external">API &amp; Doc</a>：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">require(</div><div class="line">    [</div><div class="line">        &apos;echarts&apos;,</div><div class="line">        &apos;echarts/chart/bar&apos; // 使用柱状图就加载bar模块，按需加载</div><div class="line">    ],</div><div class="line">    function (ec) &#123;</div><div class="line">        // 基于准备好的dom，初始化echarts图表</div><div class="line">        var myChart = ec.init(document.getElementById(&apos;main&apos;));</div><div class="line"></div><div class="line">        var option = &#123;</div><div class="line">            tooltip: &#123;</div><div class="line">                show: true</div><div class="line">            &#125;,</div><div class="line">            legend: &#123;</div><div class="line">                data:[&apos;销量&apos;]</div><div class="line">            &#125;,</div><div class="line">            xAxis : [</div><div class="line">                &#123;</div><div class="line">                    type : &apos;category&apos;,</div><div class="line">                    data : [&quot;衬衫&quot;,&quot;羊毛衫&quot;,&quot;雪纺衫&quot;,&quot;裤子&quot;,&quot;高跟鞋&quot;,&quot;袜子&quot;]</div><div class="line">                &#125;</div><div class="line">            ],</div><div class="line">            yAxis : [</div><div class="line">                &#123;</div><div class="line">                    type : &apos;value&apos;</div><div class="line">                &#125;</div><div class="line">            ],</div><div class="line">            series : [</div><div class="line">                &#123;</div><div class="line">                    &quot;name&quot;:&quot;销量&quot;,</div><div class="line">                    &quot;type&quot;:&quot;bar&quot;,</div><div class="line">                    &quot;data&quot;:[5, 20, 40, 10, 10, 20]</div><div class="line">                &#125;</div><div class="line">            ]</div><div class="line">        &#125;;</div><div class="line"></div><div class="line">        // 为echarts对象加载数据</div><div class="line">        myChart.setOption(option);</div><div class="line">    &#125;</div><div class="line">);</div></pre></td></tr></table></figure>
-<h4 id="5-最后的样子："><a href="#5-最后的样子：" class="headerlink" title="5. 最后的样子："></a>5. 最后的样子：</h4><p><img src="/blog/images/article_img/3-1.png" alt=""></p>
+<h4 id="5-最后的样子："><a href="#5-最后的样子：" class="headerlink" title="5. 最后的样子："></a>5. 最后的样子：</h4><p><img src="/static/images/3-1.png" alt=""></p>
 <h1 id="重点-option-部分相关配置说明"><a href="#重点-option-部分相关配置说明" class="headerlink" title="重点- option 部分相关配置说明"></a>重点- option 部分相关配置说明</h1><p>用户可以在 option 配置里自定义图标的样式。</p>
 <ul>
-<li><p>title 标题：<br><img src="/blog/images/article_img/3-2.png" alt=""></p>
+<li><p>title 标题：<br><img src="/static/images/3-2.png" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">title : &#123;</div><div class="line">    text: &apos;某地区蒸发量和降水量&apos;,  //文本</div><div class="line">    subtext: &apos;纯属虚构&apos;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
-<li><p>toolbox 便捷的工具：<br><img src="/blog/images/article_img/3-3.png" alt=""></p>
+<li><p>toolbox 便捷的工具：<br><img src="/static/images/3-3.png" alt=""></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">toolbox: &#123;</div><div class="line">    show : true,  //是否显示工具栏</div><div class="line">    feature : &#123;  //特性</div><div class="line">        mark : &#123;show: true&#125;,  //辅助线</div><div class="line">        dataView : &#123;show: true, readOnly: false&#125;,  //数据视图</div><div class="line">        magicType : &#123;show: true, type: [&apos;line&apos;, &apos;bar&apos;]&#125;,  //切换视图（折线/柱状）</div><div class="line">        restore : &#123;show: true&#125;,  //重新加载视图</div><div class="line">        saveAsImage : &#123;show: true&#125;  //保存该视图为图片</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 <li><p>series 数据列表：</p>
@@ -1039,7 +1039,7 @@
 <li><p>xAxis ： X 轴</p>
 </li>
 <li>yAxis ： Y 轴</li>
-<li>legend ：<br><img src="/blog/images/article_img/3-4.png" alt=""><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">legend: &#123;</div><div class="line">    orient : &apos;vertical&apos;,  //方向“垂直”，默认从左向右横向排列</div><div class="line">    x : &apos;left&apos;,  //位于 X 轴左侧，默认顶部居中</div><div class="line">    data:[&apos;直接访问&apos;,&apos;邮件营销&apos;,&apos;联盟广告&apos;,&apos;视频广告&apos;,&apos;搜索引擎&apos;]  //显示文本</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<li>legend ：<br><img src="/static/images/3-4.png" alt=""><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">legend: &#123;</div><div class="line">    orient : &apos;vertical&apos;,  //方向“垂直”，默认从左向右横向排列</div><div class="line">    x : &apos;left&apos;,  //位于 X 轴左侧，默认顶部居中</div><div class="line">    data:[&apos;直接访问&apos;,&apos;邮件营销&apos;,&apos;联盟广告&apos;,&apos;视频广告&apos;,&apos;搜索引擎&apos;]  //显示文本</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <p>更多配置可在<a href="http://echarts.baidu.com/doc/example.html" target="_blank" rel="external">【实例】</a>中点开测试。</p>
@@ -1052,7 +1052,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/blog/images/article_img/3.png&quot; alt=&quot;ECharts&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/static/images/3.png&quot; alt=&quot;ECharts&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;关于ECharts（ECharts）&quot;&gt;&lt;a href=&quot;#关于ECharts（ECharts）&quot; class=&quot;headerlink&quot; title=&quot;关于ECharts（ECharts）&quot;&gt;&lt;/a&gt;关于ECharts（&lt;a href=&quot;http://echarts.baidu.com/doc/about.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ECharts&lt;/a&gt;）&lt;/h1&gt;&lt;p&gt;ECharts 是百度提供的一款开源、功能强大的数据可视化产品。&lt;br&gt;主要提供折线图、柱状图、散点图、K线图、饼图、雷达图、地图、和弦图、力导向布局图、仪表盘以及漏斗图。&lt;/p&gt;
 &lt;h1 id=&quot;特性&quot;&gt;&lt;a href=&quot;#特性&quot; class=&quot;headerlink&quot; title=&quot;特性&quot;&gt;&lt;/a&gt;特性&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;拖拽重计算&lt;/li&gt;
@@ -1130,7 +1130,7 @@
     <link href="http://yoursite.com/2015/09/18/%E4%BD%BF%E7%94%A8%20Hexo%20+%20NexT%20%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2015/09/18/使用 Hexo + NexT 搭建静态博客/</id>
     <published>2015-09-18T07:06:37.000Z</published>
-    <updated>2017-06-02T12:39:37.000Z</updated>
+    <updated>2017-06-14T15:29:33.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><a href="https://github.com/" target="_blank" rel="external">Github </a>为广大开发者提供了一个非常好的平台，不仅是代码的开源，同时<a href="https://github.com/" target="_blank" rel="external"> Github </a>还提供了开发者可以在<a href="https://github.com/" target="_blank" rel="external"> Github </a>上建立自己的站点（GithubPage）的一个非常有意思的功能。这个功能的局限是只能创建静态的网站，那么我们可以使用一些工具来快速创建这一网站。<br>本文旨在帮助刚接触<a href="https://github.com/" target="_blank" rel="external"> Github </a>新手，想利用<a href="https://github.com/" target="_blank" rel="external"> Github </a>来创建自己的站点、个人博客等。大神可以忽视<strong>(:з」∠)</strong>。</p>
 <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>你需要在<a href="https://github.com/" target="_blank" rel="external"> Github </a>上创建一个属于自己的账户，然后新建一个仓库（<code>new repository</code>），并命名为 <code>YourSiteName.github.io/com</code>，此时<a href="https://github.com/" target="_blank" rel="external"> Github </a>会帮助你初始化一个静态网页，你可以根据自己的喜好选择一些模版（<del>这都不是重点</del>），接着尝试访问下你所建的站点，成功后就可以开始动工了。</p>
@@ -1144,7 +1144,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="关于NexT"><a href="#关于NexT" class="headerlink" title="关于NexT"></a>关于NexT</h1><p><img src="/blog/images/article_img/hexo-next.jpg" alt="Theme-NexT"></p>
+<h1 id="关于NexT"><a href="#关于NexT" class="headerlink" title="关于NexT"></a>关于NexT</h1><p><img src="/static/images/hexo-next.jpg" alt="Theme-NexT"></p>
 <ul>
 <li><strong>NexT is built for easily use with elegant appearance. First things first, always keep things simple</strong></li>
 <li><strong>NexT 主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。</strong></li>
@@ -1198,7 +1198,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&quot;关于NexT&quot;&gt;&lt;a href=&quot;#关于NexT&quot; class=&quot;headerlink&quot; title=&quot;关于NexT&quot;&gt;&lt;/a&gt;关于NexT&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/blog/images/article_img/hexo-next.jpg&quot; alt=&quot;Theme-NexT&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;关于NexT&quot;&gt;&lt;a href=&quot;#关于NexT&quot; class=&quot;headerlink&quot; title=&quot;关于NexT&quot;&gt;&lt;/a&gt;关于NexT&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/static/images/hexo-next.jpg&quot; alt=&quot;Theme-NexT&quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;NexT is built for easily use with elegant appearance. First things first, always keep things simple&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;NexT 主旨在于简洁优雅且易于使用，所以首先要尽量确保 NexT 的简洁易用性。&lt;/strong&gt;&lt;/li&gt;
@@ -1301,9 +1301,9 @@
     <link href="http://yoursite.com/2015/09/08/Brunch%EF%BC%9A%E5%BF%AB%E6%8D%B7%E7%9A%84HTML5%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
     <id>http://yoursite.com/2015/09/08/Brunch：快捷的HTML5构建工具/</id>
     <published>2015-09-08T06:48:25.000Z</published>
-    <updated>2017-06-02T13:25:26.000Z</updated>
+    <updated>2017-06-14T15:29:30.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/blog/images/article_img/2.png" alt="Brunch"></p>
+    <content type="html"><![CDATA[<p><img src="/static/images/2.png" alt="Brunch"></p>
 <h1 id="了解-Brunch（官方介绍）"><a href="#了解-Brunch（官方介绍）" class="headerlink" title="了解 Brunch（官方介绍）"></a>了解 Brunch（官方介绍）</h1><ul>
 <li>编译你的脚本，模板，样式，链接它们</li>
 <li>将脚本和模板封装进 common.js/AMD 模块里，链接脚本和样式</li>
@@ -1337,7 +1337,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;/blog/images/article_img/2.png&quot; alt=&quot;Brunch&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/static/images/2.png&quot; alt=&quot;Brunch&quot;&gt;&lt;/p&gt;
 &lt;h1 id=&quot;了解-Brunch（官方介绍）&quot;&gt;&lt;a href=&quot;#了解-Brunch（官方介绍）&quot; class=&quot;headerlink&quot; title=&quot;了解 Brunch（官方介绍）&quot;&gt;&lt;/a&gt;了解 Brunch（官方介绍）&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;编译你的脚本，模板，样式，链接它们&lt;/li&gt;
 &lt;li&gt;将脚本和模板封装进 common.js/AMD 模块里，链接脚本和样式&lt;/li&gt;
