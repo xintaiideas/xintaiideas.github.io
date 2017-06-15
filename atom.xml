@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joveyzheng.com/"/>
-  <updated>2017-06-15T08:54:50.000Z</updated>
+  <updated>2017-06-15T12:36:46.000Z</updated>
   <id>http://joveyzheng.com/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>理解闭包</title>
-    <link href="http://joveyzheng.com/2017/06/15/%E7%90%86%E8%A7%A3%E9%97%AD%E5%8C%85/"/>
-    <id>http://joveyzheng.com/2017/06/15/理解闭包/</id>
+    <link href="http://joveyzheng.com/2017/06/15/understand-closure/"/>
+    <id>http://joveyzheng.com/2017/06/15/understand-closure/</id>
     <published>2017-06-15T04:04:33.000Z</published>
-    <updated>2017-06-15T08:54:50.000Z</updated>
+    <updated>2017-06-15T12:36:46.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p><strong>闭包</strong> 是指可以包含自由（未绑定到特定对象）变量的代码块；这些变量不是在这个代码块内或者任何全局上下文中定义的，而是在定义代码块的环境中定义（局部变量）。“闭包” 一词来源于以下两者的结合：要执行的代码块（由于自由变量被包含在代码块中，这些自由变量以及它们引用的对象没有被释放）和为自由变量提供绑定的计算环境（作用域）。</p>
@@ -98,10 +98,10 @@
   
   <entry>
     <title>实用的 CSS — 贝塞尔曲线(cubic-bezier)</title>
-    <link href="http://joveyzheng.com/2016/03/16/%E5%AE%9E%E7%94%A8%E7%9A%84%20CSS%20%E2%80%94%20%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF(cubic-bezier)/"/>
-    <id>http://joveyzheng.com/2016/03/16/实用的 CSS — 贝塞尔曲线(cubic-bezier)/</id>
+    <link href="http://joveyzheng.com/2016/03/16/css-cubic-bezier/"/>
+    <id>http://joveyzheng.com/2016/03/16/css-cubic-bezier/</id>
     <published>2016-03-16T02:39:07.000Z</published>
-    <updated>2017-06-14T11:31:50.000Z</updated>
+    <updated>2017-06-15T12:35:11.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在了解 <code>cubic-bezier</code> 之前，你需要对 CSS3 中的动画效果有所认识，它是 <code>animation-timing-function</code> 和 <code>transition-timing-function</code> 中一个重要的内容。</p>
 <h1 id="本体"><a href="#本体" class="headerlink" title="本体"></a>本体</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><code>cubic-bezier</code> 又称<strong>三次贝塞尔</strong>，主要是为 <code>animation</code> 生成速度曲线的函数，规定是 <code>cubic-bezier(&lt;x1&gt;, &lt;y1&gt;, &lt;x2&gt;, &lt;y2&gt;)</code>。</p>
@@ -116,7 +116,7 @@
 <a id="more"></a>
 <p>我们需要关注的是 P1 和 P2 两点的取值，而其中 <strong><code>X 轴</code></strong>的取值范围是 <strong>0</strong> 到 <strong>1</strong>，当取值超出范围时 <code>cubic-bezier</code> 将失效；<code>Y 轴</code>的取值没有规定，当然也毋须过大。</p>
 <p>最直接的理解是，将<strong>以一条直线放在范围只有 1 的坐标轴中，并从中间拿出两个点来拉扯（X 轴的取值区间是 [0, 1]，Y 轴任意），最后形成的曲线就是动画的速度曲线</strong>。</p>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>在测试例子中：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"zh-cn"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></div><div class="line">    <span class="selector-class">.animation</span> &#123;</div><div class="line">      <span class="attribute">width</span>: <span class="number">50px</span>;</div><div class="line">      <span class="attribute">height</span>: <span class="number">50px</span>;</div><div class="line">      <span class="attribute">background-color</span>: <span class="number">#ed3</span>;</div><div class="line">      <span class="attribute">-webkit-transition</span>:  all <span class="number">2s</span>;</div><div class="line">           <span class="attribute">-o-transition</span>:  all <span class="number">2s</span>;</div><div class="line">              <span class="attribute">transition</span>:  all <span class="number">2s</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="selector-class">.animation</span><span class="selector-pseudo">:hover</span> &#123;</div><div class="line">      <span class="attribute">-webkit-transform</span>:  <span class="built_in">translateX</span>(100px);</div><div class="line">          <span class="attribute">-ms-transform</span>:  <span class="built_in">translateX</span>(100px);</div><div class="line">           <span class="attribute">-o-transform</span>:  <span class="built_in">translateX</span>(100px);</div><div class="line">              <span class="attribute">transform</span>:  <span class="built_in">translateX</span>(100px);</div><div class="line">    &#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"animation"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>在测试例子中：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"zh-cn"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">    .animation &#123;</div><div class="line">      width: 50px;</div><div class="line">      height: 50px;</div><div class="line">      background-color: #ed3;</div><div class="line">      -webkit-transition:  all 2s;</div><div class="line">           -o-transition:  all 2s;</div><div class="line">              transition:  all 2s;</div><div class="line">    &#125;</div><div class="line">    .animation:hover &#123;</div><div class="line">      -webkit-transform:  translateX(100px);</div><div class="line">          -ms-transform:  translateX(100px);</div><div class="line">           -o-transform:  translateX(100px);</div><div class="line">              transform:  translateX(100px);</div><div class="line">    &#125;</div><div class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"animation"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
 <p>我们可以在浏览器中看到，当鼠标移到元素上时，元素开始向右移动，开始比较慢，之后则比较快，移开时按原曲线回到原点。</p>
 <p>在例子中，当我们不为 <code>transition</code> 添加 <code>cubic-bezier</code> 或是其他 <code>timing-function</code> 时，默认的速度曲线是 <code>ease</code>，此时的速度曲线是：<br><img src="/static/images/cubic-bezier-03.png" alt="cubic-bezier"></p>
 <p>那么让我们在代码中加入 <code>cubic-bezier(.17, .86, .73, .14)</code>：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">.animation &#123;</div><div class="line">  ...</div><div class="line">  -webkit-transition:  all 2s cubic-bezier(.17, .86, .73, .14);</div><div class="line">       -o-transition:  all 2s cubic-bezier(.17, .86, .73, .14);</div><div class="line">          transition:  all 2s cubic-bezier(.17, .86, .73, .14);</div><div class="line">&#125;</div><div class="line">...</div></pre></td></tr></table></figure></p>
@@ -173,10 +173,10 @@
   
   <entry>
     <title>Hexo 构建博客 - NexT 主题浅谈</title>
-    <link href="http://joveyzheng.com/2016/03/03/Hexo%20%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%20-%20NexT%20%E4%B8%BB%E9%A2%98%E6%B5%85%E8%B0%88/"/>
-    <id>http://joveyzheng.com/2016/03/03/Hexo 构建博客 - NexT 主题浅谈/</id>
+    <link href="http://joveyzheng.com/2016/03/03/hexo-theme-next-brief-talk/"/>
+    <id>http://joveyzheng.com/2016/03/03/hexo-theme-next-brief-talk/</id>
     <published>2016-03-03T06:16:35.000Z</published>
-    <updated>2017-06-14T15:29:28.000Z</updated>
+    <updated>2017-06-15T11:55:40.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>利用 <a href="https://github.com/" target="_blank" rel="external">Github</a> 所提供的 <strong>Github Page</strong> 去构建静态的网站已经变得越来越流行，如果还不了解怎么入门，可以阅读我之前的一篇文章<a href="http://www.jianshu.com/p/f66103553c45" target="_blank" rel="external">「使用Hexo + Next搭建静态博客」</a>。当然构建博客的方法不是只有一种，你也可以尝试其他方法，而本文主要是针对 <strong>Hexo</strong> 去叙述的。</p>
@@ -259,10 +259,10 @@
   
   <entry>
     <title>React 入门实践</title>
-    <link href="http://joveyzheng.com/2016/01/26/React%20%E5%85%A5%E9%97%A8%E5%AE%9E%E8%B7%B5/"/>
-    <id>http://joveyzheng.com/2016/01/26/React 入门实践/</id>
+    <link href="http://joveyzheng.com/2016/01/26/react-entry-practice/"/>
+    <id>http://joveyzheng.com/2016/01/26/react-entry-practice/</id>
     <published>2016-01-26T01:43:59.000Z</published>
-    <updated>2017-06-02T12:35:10.000Z</updated>
+    <updated>2017-06-15T12:33:12.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>在写这篇文章之前，我已经接触 React 有大半年了。在初步学习 React 之后就正式应用到项目中，当时就想把自己的一些想法写出来分享一下，无奈不太会写文章，再则时间不是很充裕，所以也就搁下了。<br>本篇文章比较基础，没有深入的分析，大神们轻看。废话就不多说了，那么让我们来进入正题。</p>
@@ -392,10 +392,10 @@
   
   <entry>
     <title>React 测试驱动教程</title>
-    <link href="http://joveyzheng.com/2016/01/21/React%20%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E6%95%99%E7%A8%8B/"/>
-    <id>http://joveyzheng.com/2016/01/21/React 测试驱动教程/</id>
+    <link href="http://joveyzheng.com/2016/01/21/test-driven-react-tutorial/"/>
+    <id>http://joveyzheng.com/2016/01/21/test-driven-react-tutorial/</id>
     <published>2016-01-21T10:19:35.000Z</published>
-    <updated>2017-06-02T12:35:22.000Z</updated>
+    <updated>2017-06-15T12:33:31.000Z</updated>
     
     <content type="html"><![CDATA[<p>测试是开发周期中的一个重要组成部分。没有测试的代码被称为：遗留代码。对于我而言，第一次学习 React 和 JavaScript 的时候，感到很有压力。如果你也是刚开始学习 JS/React，并加入他们的社区，那么也可能会有相同的感觉。想到的会是：</p>
 <ul>
@@ -562,20 +562,20 @@
     
       <category term="React" scheme="http://joveyzheng.com/tags/React/"/>
     
+      <category term="JavaScript" scheme="http://joveyzheng.com/tags/JavaScript/"/>
+    
       <category term="Tutorial" scheme="http://joveyzheng.com/tags/Tutorial/"/>
     
       <category term="Testing" scheme="http://joveyzheng.com/tags/Testing/"/>
-    
-      <category term="JavaScript" scheme="http://joveyzheng.com/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>20 个交互非常棒的按钮代码</title>
-    <link href="http://joveyzheng.com/2015/12/24/20%20%E4%B8%AA%E4%BA%A4%E4%BA%92%E9%9D%9E%E5%B8%B8%E6%A3%92%E7%9A%84%E6%8C%89%E9%92%AE%E4%BB%A3%E7%A0%81/"/>
-    <id>http://joveyzheng.com/2015/12/24/20 个交互非常棒的按钮代码/</id>
+    <link href="http://joveyzheng.com/2015/12/24/20-code-snippets-for-interactive-buttons/"/>
+    <id>http://joveyzheng.com/2015/12/24/20-code-snippets-for-interactive-buttons/</id>
     <published>2015-12-24T01:57:22.000Z</published>
-    <updated>2017-06-02T12:35:33.000Z</updated>
+    <updated>2017-06-15T11:53:38.000Z</updated>
     
     <content type="html"><![CDATA[<p>你能想象网页中没有按钮吗？我打赌你不会。在网页中，拥有按钮并不奇怪，这些看似很小、主要以矩形表现（如导航栏，版权信息）的东西，其实是网页 UI 中基础之一。它们不仅使链接看起来更有分量、吸引人和鲜明，而且他们还能提高跳转率和用户体验，使之更方便和直观。这些 CTA （Call-to-action：行为召唤）能帮你获得更多的潜在客户和促进业务的扩展。</p>
 <p><img src="http://www.noupe.com/wp-content/uploads/2015/10/codesnippets-buttons-teaser_EN.jpg" alt="HOST"></p>
@@ -649,10 +649,10 @@
   
   <entry>
     <title>CSS 的使用中你可能不知道的 7 件事</title>
-    <link href="http://joveyzheng.com/2015/12/22/CSS%20%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%AD%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%207%20%E4%BB%B6%E4%BA%8B/"/>
-    <id>http://joveyzheng.com/2015/12/22/CSS 的使用中你可能不知道的 7 件事/</id>
+    <link href="http://joveyzheng.com/2015/12/22/css-facts/"/>
+    <id>http://joveyzheng.com/2015/12/22/css-facts/</id>
     <published>2015-12-22T07:50:56.000Z</published>
-    <updated>2017-06-02T12:37:51.000Z</updated>
+    <updated>2017-06-15T11:54:29.000Z</updated>
     
     <content type="html"><![CDATA[<p>无论你信不信，JavaScript 和 CSS 已经开始重叠，并为 CSS 增加了更多的功能。当我在写 <a href="https://davidwalsh.name/ways-css-javascript-interact" target="_blank" rel="external">CSS 与 JavaScript 交互中你可能不知道的 5 种方式</a>的时候，读者对于 CSS 与 JavaScript 已经重叠的事感到很惊讶。那么今天，我会着重为你介绍 7 个可以通过 CSS 完成的任务 —— 不使用 JavaScript 或图像处理！</p>
 <h1 id="CSS-supports"><a href="#CSS-supports" class="headerlink" title="CSS @supports"></a><a href="https://davidwalsh.name/css-supports" target="_blank" rel="external">CSS @supports</a></h1><p>每个优秀的前端工程师都会在使用某个特性前测试一下，确保是否在浏览器中可以使用。而这类测试通常是由 JavaScript 完成的，当然，也有很多人用 Modernizr（拥有很多很好功能的测试工具）来测试特性。那么现在有一个 CSS 新的 API 可以让你去做特性测试：<a href="https://davidwalsh.name/css-supports" target="_blank" rel="external">@supports</a>，下面的例子将简单地教你如何使用：</p>
@@ -723,10 +723,10 @@
   
   <entry>
     <title>使用 React 是业务需求，而不是技术需求</title>
-    <link href="http://joveyzheng.com/2015/12/15/%E4%BD%BF%E7%94%A8%20React%20%E6%98%AF%E4%B8%9A%E5%8A%A1%E9%9C%80%E6%B1%82%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E6%8A%80%E6%9C%AF%E9%9C%80%E6%B1%82/"/>
-    <id>http://joveyzheng.com/2015/12/15/使用 React 是业务需求，而不是技术需求/</id>
+    <link href="http://joveyzheng.com/2015/12/15/using-react-is-a-business-decision-not-a-technology-choice/"/>
+    <id>http://joveyzheng.com/2015/12/15/using-react-is-a-business-decision-not-a-technology-choice/</id>
     <published>2015-12-15T04:23:23.000Z</published>
-    <updated>2017-06-02T12:38:01.000Z</updated>
+    <updated>2017-06-15T12:34:50.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>React 已经在开发者圈越来越流行了，并且有很多说明其技术优势的资源。然而，迁移（或是选择）一个新的框架最终归结为向所有人推销 —— 包括非开发者。这里会有一小部分工程经理或项目经理会因为它的新颖，而选择使用它来重构，更糟的是，很多团队被 JavaScript 的高生产工具搞得焦头烂额了，可悲的是向后移动项目是向前移动 web 的一部分。这篇文章并不是试图教你关于 React 的新东西，只是试着去总结以下，起点是为了向所有人说明 React 的疑惑，不仅是开发者。</p>
 <p><strong>总结</strong>：React 是一个为创建可组合的用户界面的库。同比其他类似的库如  Angular、Backbone、Knockout 和 Ember，React 的出现是为了解决业务问题而非技术的。接下来会为你解释 React 的重要性和对开发团队的益处。</p>
@@ -774,10 +774,10 @@
   
   <entry>
     <title>ReactJS 的学习教程</title>
-    <link href="http://joveyzheng.com/2015/12/07/ReactJS%20%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/"/>
-    <id>http://joveyzheng.com/2015/12/07/ReactJS 的学习教程/</id>
+    <link href="http://joveyzheng.com/2015/12/07/best-tutorials-to-learn-reactjs/"/>
+    <id>http://joveyzheng.com/2015/12/07/best-tutorials-to-learn-reactjs/</id>
     <published>2015-12-07T01:48:17.000Z</published>
-    <updated>2017-06-02T12:38:10.000Z</updated>
+    <updated>2017-06-15T12:32:13.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://www.logopearl.com/blog/wp-content/uploads/2015/12/reactjs-tutorials.jpg"></p>
 <p>当提到为某个应用或网站构建 UI 时，ReactJS 往往是首先列出的最好的 JavaScript 库。首先它是开源的，并且已经在 Instagram 和 Facebook 上得到实践。还有一些著名的网站也使用 ReactJS 去构建他们的 UI，例如 Airbnb，Khan Academy，BBC，Netflix <a href="https://github.com/facebook/react/wiki/Sites-Using-React" target="_blank" rel="external">等等</a>。</p>
@@ -831,10 +831,10 @@
   
   <entry>
     <title>对于 Web 设计师和开发者非常有用的 25 个 Chrome 扩展应用</title>
-    <link href="http://joveyzheng.com/2015/12/04/%E5%AF%B9%E4%BA%8E%20Web%20%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%92%8C%E5%BC%80%E5%8F%91%E8%80%85%E9%9D%9E%E5%B8%B8%E6%9C%89%E7%94%A8%E7%9A%84%2025%20%E4%B8%AA%20Chrome%20%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/"/>
-    <id>http://joveyzheng.com/2015/12/04/对于 Web 设计师和开发者非常有用的 25 个 Chrome 扩展应用/</id>
+    <link href="http://joveyzheng.com/2015/12/04/25-chrome-extensions-for-web-designers-developers/"/>
+    <id>http://joveyzheng.com/2015/12/04/25-chrome-extensions-for-web-designers-developers/</id>
     <published>2015-12-04T02:10:33.000Z</published>
-    <updated>2017-06-02T12:38:19.000Z</updated>
+    <updated>2017-06-15T12:35:22.000Z</updated>
     
     <content type="html"><![CDATA[<p>尽管 Chrome 的开发者工具给你足够多的实用工具来覆盖你的设计和开发需求，但也可以通过添加免费的扩展应用去进一步扩展浏览器的功能。根据你的需要，并选择完美的扩展，你可以轻松地创建一个个性化的开发环境，这会大大提高你的开发效率。</p>
 <p>要介绍的 25 个 Chrome 扩展应该我们为你选择分为以下几类：<a href="#前端扩展">前端扩展</a>，<a href="#在线编辑">在线编辑</a>，<a href="#验证器与性能相关">验证器与性能相关</a>，<a href="#测量扩展应用">测量扩展应用</a>，<a href="#颜色工具">颜色工具</a>，<a href="#字体测试工具">字体测试工具</a>和 <a href="#很有用的实用性扩展应用">很有用的实用性扩展应用</a>。</p>
@@ -905,10 +905,10 @@
   
   <entry>
     <title>博客的新版布局</title>
-    <link href="http://joveyzheng.com/2015/12/01/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%96%B0%E7%89%88%E5%B8%83%E5%B1%80/"/>
-    <id>http://joveyzheng.com/2015/12/01/博客的新版布局/</id>
+    <link href="http://joveyzheng.com/2015/12/01/blog-new-layout/"/>
+    <id>http://joveyzheng.com/2015/12/01/blog-new-layout/</id>
     <published>2015-12-01T06:12:53.000Z</published>
-    <updated>2017-06-14T15:29:32.000Z</updated>
+    <updated>2017-06-15T12:34:35.000Z</updated>
     
     <content type="html"><![CDATA[<p>今天兴致勃勃去查看了下 Next 主题的更新，发现已经有了新的版本，而且布局也更新了。所以马上就试了试，先来看看变化：</p>
 <h4 id="旧版"><a href="#旧版" class="headerlink" title="旧版"></a>旧版</h4><p><img src="/static/images/old-1.png" alt="old-main"></p>
@@ -948,10 +948,10 @@
   
   <entry>
     <title>5 大 Web 开发与设计网站</title>
-    <link href="http://joveyzheng.com/2015/11/17/5%20%E5%A4%A7%20Web%20%E5%BC%80%E5%8F%91%E4%B8%8E%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99/"/>
-    <id>http://joveyzheng.com/2015/11/17/5 大 Web 开发与设计网站/</id>
+    <link href="http://joveyzheng.com/2015/11/17/5-top-websites-on-web-design-and-development/"/>
+    <id>http://joveyzheng.com/2015/11/17/5-top-websites-on-web-design-and-development/</id>
     <published>2015-11-17T02:23:56.000Z</published>
-    <updated>2017-06-02T12:38:37.000Z</updated>
+    <updated>2017-06-15T11:53:20.000Z</updated>
     
     <content type="html"><![CDATA[<p>Web 缺点之一是任何东西都是临时的。<br>技术的发展快如闪电，当你想设计一个新的网站，或是让别人为你设计一个，当前的技术将变得不足以应付。本文将为你介绍很多很好的网站。<br>你需要设计一个让读者难忘的，同时能发表一个声明，并且不会像其它网站一样会让你的读者“尖叫”的网站。<br>你要为你的目标读者提供一个独特而不同于其它的体验，否则你会失去这里读者。</p>
 <p>如果你是一个 Web 开发人员或是设计师，那么你会喜欢上这 5 个网站，同时你也会拥有一个志同道合的社区，从中受益并且重新概念化你的品牌和业务价值。</p>
@@ -980,9 +980,9 @@
     
       <category term="译文" scheme="http://joveyzheng.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="Web Dedign" scheme="http://joveyzheng.com/tags/Web-Dedign/"/>
-    
       <category term="Web Development" scheme="http://joveyzheng.com/tags/Web-Development/"/>
+    
+      <category term="Web Dedign" scheme="http://joveyzheng.com/tags/Web-Dedign/"/>
     
       <category term="Websites" scheme="http://joveyzheng.com/tags/Websites/"/>
     
@@ -990,10 +990,10 @@
   
   <entry>
     <title>使用 Git 管理项目 - reset 与 rebase</title>
-    <link href="http://joveyzheng.com/2015/11/04/%E4%BD%BF%E7%94%A8%20Git%20%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%20-%20reset%20%E4%B8%8E%20rebase/"/>
-    <id>http://joveyzheng.com/2015/11/04/使用 Git 管理项目 - reset 与 rebase/</id>
+    <link href="http://joveyzheng.com/2015/11/04/use-git-reset-and-rebase/"/>
+    <id>http://joveyzheng.com/2015/11/04/use-git-reset-and-rebase/</id>
     <published>2015-11-04T09:49:09.000Z</published>
-    <updated>2017-06-14T15:29:34.000Z</updated>
+    <updated>2017-06-15T11:56:23.000Z</updated>
     
     <content type="html"><![CDATA[<p>在日常管理项目的过程中，可能会遇到提交的 commit/merge 并不是想要的，或是操作失误提交了，那么此时我们需要把不想要的 commit/merge 取消掉，如果做到呢？Git 为我们提供了一个 <code>reset</code> command，很好地解决了这个问题。</p>
 <h1 id="reset"><a href="#reset" class="headerlink" title="reset"></a>reset</h1><h2 id="1-命令说明"><a href="#1-命令说明" class="headerlink" title="1. 命令说明"></a>1. 命令说明</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git reset [--hard|soft|mixed|merge|keep] [&lt;commit&gt;|&lt;HEAD&gt;]</div></pre></td></tr></table></figure>
@@ -1056,10 +1056,10 @@
   
   <entry>
     <title>ECharts - 数据图表的使用</title>
-    <link href="http://joveyzheng.com/2015/10/16/ECharts%20-%20%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://joveyzheng.com/2015/10/16/ECharts - 数据图表的使用/</id>
+    <link href="http://joveyzheng.com/2015/10/16/use-echarts/"/>
+    <id>http://joveyzheng.com/2015/10/16/use-echarts/</id>
     <published>2015-10-16T10:14:23.000Z</published>
-    <updated>2017-06-14T15:29:29.000Z</updated>
+    <updated>2017-06-15T11:54:45.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/static/images/3.png" alt="ECharts"></p>
 <h1 id="关于ECharts（ECharts）"><a href="#关于ECharts（ECharts）" class="headerlink" title="关于ECharts（ECharts）"></a>关于ECharts（<a href="http://echarts.baidu.com/doc/about.html" target="_blank" rel="external">ECharts</a>）</h1><p>ECharts 是百度提供的一款开源、功能强大的数据可视化产品。<br>主要提供折线图、柱状图、散点图、K线图、饼图、雷达图、地图、和弦图、力导向布局图、仪表盘以及漏斗图。</p>
@@ -1129,10 +1129,10 @@
   
   <entry>
     <title>更新 Github 的 Fork 代码</title>
-    <link href="http://joveyzheng.com/2015/10/06/%E6%9B%B4%E6%96%B0%20Github%20%E7%9A%84%20Fork%20%E4%BB%A3%E7%A0%81/"/>
-    <id>http://joveyzheng.com/2015/10/06/更新 Github 的 Fork 代码/</id>
+    <link href="http://joveyzheng.com/2015/10/06/use-git-update-fork-code/"/>
+    <id>http://joveyzheng.com/2015/10/06/use-git-update-fork-code/</id>
     <published>2015-10-06T08:46:12.000Z</published>
-    <updated>2017-06-02T12:39:52.000Z</updated>
+    <updated>2017-06-15T12:35:49.000Z</updated>
     
     <content type="html"><![CDATA[<p><a href="https://github.com/" target="_blank" rel="external">github</a> 提供了一个非常便捷的功能叫 <strong>Fork</strong>，即用户可以很方便的从别的仓库中复制一份代码到自己的名下。但是有一个不足是 <a href="https://github.com/" target="_blank" rel="external">github</a> 并不提供自动更新功能，那么此时就需要我们自己手动更新这个 <strong>Fork</strong> 仓库代码。</p>
 <h1 id="基本方法"><a href="#基本方法" class="headerlink" title="基本方法"></a>基本方法</h1><ol>
@@ -1180,10 +1180,10 @@
   
   <entry>
     <title>使用 Hexo + NexT 搭建静态博客</title>
-    <link href="http://joveyzheng.com/2015/09/18/%E4%BD%BF%E7%94%A8%20Hexo%20+%20NexT%20%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://joveyzheng.com/2015/09/18/使用 Hexo + NexT 搭建静态博客/</id>
+    <link href="http://joveyzheng.com/2015/09/18/use-hexo-and-next-to-build-blog/"/>
+    <id>http://joveyzheng.com/2015/09/18/use-hexo-and-next-to-build-blog/</id>
     <published>2015-09-18T07:06:37.000Z</published>
-    <updated>2017-06-14T15:29:33.000Z</updated>
+    <updated>2017-06-15T12:34:23.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p><a href="https://github.com/" target="_blank" rel="external">Github </a>为广大开发者提供了一个非常好的平台，不仅是代码的开源，同时<a href="https://github.com/" target="_blank" rel="external"> Github </a>还提供了开发者可以在<a href="https://github.com/" target="_blank" rel="external"> Github </a>上建立自己的站点（GithubPage）的一个非常有意思的功能。这个功能的局限是只能创建静态的网站，那么我们可以使用一些工具来快速创建这一网站。<br>本文旨在帮助刚接触<a href="https://github.com/" target="_blank" rel="external"> Github </a>新手，想利用<a href="https://github.com/" target="_blank" rel="external"> Github </a>来创建自己的站点、个人博客等。大神可以忽视<strong>(:з」∠)</strong>。</p>
 <h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>你需要在<a href="https://github.com/" target="_blank" rel="external"> Github </a>上创建一个属于自己的账户，然后新建一个仓库（<code>new repository</code>），并命名为 <code>YourSiteName.github.io/com</code>，此时<a href="https://github.com/" target="_blank" rel="external"> Github </a>会帮助你初始化一个静态网页，你可以根据自己的喜好选择一些模版（<del>这都不是重点</del>），接着尝试访问下你所建的站点，成功后就可以开始动工了。</p>
@@ -1275,10 +1275,10 @@
   
   <entry>
     <title>NPM 一些常用命令</title>
-    <link href="http://joveyzheng.com/2015/09/17/NPM%20%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>http://joveyzheng.com/2015/09/17/NPM 一些常用命令/</id>
+    <link href="http://joveyzheng.com/2015/09/17/use-npm-command/"/>
+    <id>http://joveyzheng.com/2015/09/17/use-npm-command/</id>
     <published>2015-09-17T07:57:11.000Z</published>
-    <updated>2017-06-02T13:27:56.000Z</updated>
+    <updated>2017-06-15T11:57:42.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="关于NPM"><a href="#关于NPM" class="headerlink" title="关于NPM"></a>关于NPM</h1><p>NPM 的全称是 Node Package Manager，是一个 NodeJS 包管理和分发工具，已经成为了非官方的发布 Node 模块（包）的标准。<br>就目前而言，NPM 的官网<a href="https://www.npmjs.com/" target="_blank" rel="external">[1]</a>拥有 18 万的 packages。国内的镜像是淘宝所提供的 CNPM<a href="http://npm.taobao.org/" target="_blank" rel="external">[2]</a>，与 NPM 相同，它会每隔 10 分钟就同步一次。</p>
 <h1 id="一些常用命令"><a href="#一些常用命令" class="headerlink" title="一些常用命令"></a>一些常用命令</h1><ul>
@@ -1351,10 +1351,10 @@
   
   <entry>
     <title>Brunch：快捷的HTML5构建工具</title>
-    <link href="http://joveyzheng.com/2015/09/08/Brunch%EF%BC%9A%E5%BF%AB%E6%8D%B7%E7%9A%84HTML5%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
-    <id>http://joveyzheng.com/2015/09/08/Brunch：快捷的HTML5构建工具/</id>
+    <link href="http://joveyzheng.com/2015/09/08/use-brunch/"/>
+    <id>http://joveyzheng.com/2015/09/08/use-brunch/</id>
     <published>2015-09-08T06:48:25.000Z</published>
-    <updated>2017-06-14T15:29:30.000Z</updated>
+    <updated>2017-06-15T11:54:13.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/static/images/2.png" alt="Brunch"></p>
 <h1 id="了解-Brunch（官方介绍）"><a href="#了解-Brunch（官方介绍）" class="headerlink" title="了解 Brunch（官方介绍）"></a>了解 Brunch（官方介绍）</h1><ul>
@@ -1419,11 +1419,11 @@
   </entry>
   
   <entry>
-    <title>使用 Git 管理项目-初始化</title>
-    <link href="http://joveyzheng.com/2015/09/07/%E4%BD%BF%E7%94%A8%20Git%20%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE-%E5%88%9D%E5%A7%8B%E5%8C%96/"/>
-    <id>http://joveyzheng.com/2015/09/07/使用 Git 管理项目-初始化/</id>
+    <title>使用 Git 管理项目 - 初始化</title>
+    <link href="http://joveyzheng.com/2015/09/07/use-git-initialize/"/>
+    <id>http://joveyzheng.com/2015/09/07/use-git-initialize/</id>
     <published>2015-09-07T07:57:59.000Z</published>
-    <updated>2017-06-02T13:30:51.000Z</updated>
+    <updated>2017-06-15T11:57:25.000Z</updated>
     
     <content type="html"><![CDATA[<h1 id="获取-Git-仓库"><a href="#获取-Git-仓库" class="headerlink" title="获取 Git 仓库"></a>获取 Git 仓库</h1><p>获取 Git 仓库的方式主要分为两种。第一种是在现有项目或目录下导入所有文件到 Git 中；第二种是从一个服务器克隆一个现有的 Git 仓库。</p>
 <h2 id="GIT-INIT"><a href="#GIT-INIT" class="headerlink" title="GIT INIT"></a>GIT INIT</h2><p>首先在现有的项目目录下输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git init</div></pre></td></tr></table></figure></p>
@@ -1462,10 +1462,10 @@
   
   <entry>
     <title>生成 SSH keys</title>
-    <link href="http://joveyzheng.com/2015/09/07/%E7%94%9F%E6%88%90SSH%20keys/"/>
-    <id>http://joveyzheng.com/2015/09/07/生成SSH keys/</id>
+    <link href="http://joveyzheng.com/2015/09/07/use-git-generate-ssh-key/"/>
+    <id>http://joveyzheng.com/2015/09/07/use-git-generate-ssh-key/</id>
     <published>2015-09-07T07:04:33.000Z</published>
-    <updated>2017-06-02T13:32:49.000Z</updated>
+    <updated>2017-06-15T12:36:11.000Z</updated>
     
     <content type="html"><![CDATA[<p>首先确认自己的系统中是否已经拥有密钥。在默认情况下SSH的密钥存储在其 <code>~/.ssh</code> 目录下。可以使用以下命令进入目录并列出内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ cd ~/.ssh</div><div class="line">$ ls</div><div class="line"></div><div class="line">id_rsa  id_rsa.pub  known_hosts</div></pre></td></tr></table></figure></p>
 <p>其中 <code>id_rsa</code> 和 <code>id_rsa.pub</code> 就是存储密钥的文件，带有 <code>.pub</code> 后缀的是公钥，另外一个则是私钥。如果存在这些文件，则可以直接用 <code>$ cat id_rsa.pub</code> 来读取密钥内容。<br>如果找不到这样的文件（或者不存在 <code>~/.ssh</code> 目录），则可以通过 <code>$ ssh-keygen</code> 来创建它们。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C `you@email.com`</div><div class="line"></div><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file in which to save the key (/home/schacon/.ssh/id_rsa):</div><div class="line">Created directory &apos;/home/schacon/.ssh&apos;.</div><div class="line">Enter passphrase (empty for no passphrase):</div><div class="line">Enter same passphrase again:</div><div class="line">Your identification has been saved in /home/schacon/.ssh/id_rsa.</div><div class="line">Your public key has been saved in /home/schacon/.ssh/id_rsa.pub.</div><div class="line">The key fingerprint is:</div><div class="line">d0:82:24:8e:d7:f1:bb:9b:33:53:96:93:49:da:9b:e3 you@email.com</div></pre></td></tr></table></figure></p>
@@ -1485,9 +1485,9 @@
       <category term="笔记随笔" scheme="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="git" scheme="http://joveyzheng.com/tags/git/"/>
-    
       <category term="SSH" scheme="http://joveyzheng.com/tags/SSH/"/>
+    
+      <category term="git" scheme="http://joveyzheng.com/tags/git/"/>
     
       <category term="加密" scheme="http://joveyzheng.com/tags/%E5%8A%A0%E5%AF%86/"/>
     

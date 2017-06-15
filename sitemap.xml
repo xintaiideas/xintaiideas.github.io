@@ -2,58 +2,149 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://joveyzheng.com/2017/06/15/%E7%90%86%E8%A7%A3%E9%97%AD%E5%8C%85/</loc>
+    <loc>http://joveyzheng.com/2017/06/15/understand-closure/</loc>
     
-    <lastmod>2017-06-15T08:54:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/09/07/%E4%BD%BF%E7%94%A8%20Git%20%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%20-%20%E8%B5%B7%E6%AD%A5/</loc>
-    
-    <lastmod>2017-06-14T15:29:35.000Z</lastmod>
+    <lastmod>2017-06-15T12:36:46.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://joveyzheng.com/2015/11/04/%E4%BD%BF%E7%94%A8%20Git%20%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE%20-%20reset%20%E4%B8%8E%20rebase/</loc>
+    <loc>http://joveyzheng.com/2015/09/07/use-git-generate-ssh-key/</loc>
     
-    <lastmod>2017-06-14T15:29:34.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/09/18/%E4%BD%BF%E7%94%A8%20Hexo%20+%20NexT%20%E6%90%AD%E5%BB%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</loc>
-    
-    <lastmod>2017-06-14T15:29:33.000Z</lastmod>
+    <lastmod>2017-06-15T12:36:11.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://joveyzheng.com/2015/12/01/%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%96%B0%E7%89%88%E5%B8%83%E5%B1%80/</loc>
+    <loc>http://joveyzheng.com/2015/10/06/use-git-update-fork-code/</loc>
     
-    <lastmod>2017-06-14T15:29:32.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/09/08/Brunch%EF%BC%9A%E5%BF%AB%E6%8D%B7%E7%9A%84HTML5%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/</loc>
-    
-    <lastmod>2017-06-14T15:29:30.000Z</lastmod>
+    <lastmod>2017-06-15T12:35:49.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://joveyzheng.com/2015/10/16/ECharts%20-%20%E6%95%B0%E6%8D%AE%E5%9B%BE%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    <loc>http://joveyzheng.com/2015/12/04/25-chrome-extensions-for-web-designers-developers/</loc>
     
-    <lastmod>2017-06-14T15:29:29.000Z</lastmod>
+    <lastmod>2017-06-15T12:35:22.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://joveyzheng.com/2016/03/03/Hexo%20%E6%9E%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%20-%20NexT%20%E4%B8%BB%E9%A2%98%E6%B5%85%E8%B0%88/</loc>
+    <loc>http://joveyzheng.com/2016/03/16/css-cubic-bezier/</loc>
     
-    <lastmod>2017-06-14T15:29:28.000Z</lastmod>
+    <lastmod>2017-06-15T12:35:11.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/12/15/using-react-is-a-business-decision-not-a-technology-choice/</loc>
+    
+    <lastmod>2017-06-15T12:34:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/12/01/blog-new-layout/</loc>
+    
+    <lastmod>2017-06-15T12:34:35.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/09/18/use-hexo-and-next-to-build-blog/</loc>
+    
+    <lastmod>2017-06-15T12:34:23.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2016/01/21/test-driven-react-tutorial/</loc>
+    
+    <lastmod>2017-06-15T12:33:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2016/01/26/react-entry-practice/</loc>
+    
+    <lastmod>2017-06-15T12:33:12.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/12/07/best-tutorials-to-learn-reactjs/</loc>
+    
+    <lastmod>2017-06-15T12:32:13.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/09/17/use-npm-command/</loc>
+    
+    <lastmod>2017-06-15T11:57:42.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/09/07/use-git-initialize/</loc>
+    
+    <lastmod>2017-06-15T11:57:25.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/09/07/use-git-starter/</loc>
+    
+    <lastmod>2017-06-15T11:56:40.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/11/04/use-git-reset-and-rebase/</loc>
+    
+    <lastmod>2017-06-15T11:56:23.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2016/03/03/hexo-theme-next-brief-talk/</loc>
+    
+    <lastmod>2017-06-15T11:55:40.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/10/16/use-echarts/</loc>
+    
+    <lastmod>2017-06-15T11:54:45.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/12/22/css-facts/</loc>
+    
+    <lastmod>2017-06-15T11:54:29.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/09/08/use-brunch/</loc>
+    
+    <lastmod>2017-06-15T11:54:13.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/12/24/20-code-snippets-for-interactive-buttons/</loc>
+    
+    <lastmod>2017-06-15T11:53:38.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/2015/11/17/5-top-websites-on-web-design-and-development/</loc>
+    
+    <lastmod>2017-06-15T11:53:20.000Z</lastmod>
     
   </url>
   
@@ -61,97 +152,6 @@
     <loc>http://joveyzheng.com/about/index.html</loc>
     
     <lastmod>2017-06-14T15:26:30.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2016/03/16/%E5%AE%9E%E7%94%A8%E7%9A%84%20CSS%20%E2%80%94%20%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF(cubic-bezier)/</loc>
-    
-    <lastmod>2017-06-14T11:31:50.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/09/07/%E7%94%9F%E6%88%90SSH%20keys/</loc>
-    
-    <lastmod>2017-06-02T13:32:49.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/09/07/%E4%BD%BF%E7%94%A8%20Git%20%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE-%E5%88%9D%E5%A7%8B%E5%8C%96/</loc>
-    
-    <lastmod>2017-06-02T13:30:51.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/09/17/NPM%20%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
-    
-    <lastmod>2017-06-02T13:27:56.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/10/06/%E6%9B%B4%E6%96%B0%20Github%20%E7%9A%84%20Fork%20%E4%BB%A3%E7%A0%81/</loc>
-    
-    <lastmod>2017-06-02T12:39:52.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/11/17/5%20%E5%A4%A7%20Web%20%E5%BC%80%E5%8F%91%E4%B8%8E%E8%AE%BE%E8%AE%A1%E7%BD%91%E7%AB%99/</loc>
-    
-    <lastmod>2017-06-02T12:38:37.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/12/04/%E5%AF%B9%E4%BA%8E%20Web%20%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%92%8C%E5%BC%80%E5%8F%91%E8%80%85%E9%9D%9E%E5%B8%B8%E6%9C%89%E7%94%A8%E7%9A%84%2025%20%E4%B8%AA%20Chrome%20%E6%89%A9%E5%B1%95%E5%BA%94%E7%94%A8/</loc>
-    
-    <lastmod>2017-06-02T12:38:19.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/12/07/ReactJS%20%E7%9A%84%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2017-06-02T12:38:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/12/15/%E4%BD%BF%E7%94%A8%20React%20%E6%98%AF%E4%B8%9A%E5%8A%A1%E9%9C%80%E6%B1%82%EF%BC%8C%E8%80%8C%E4%B8%8D%E6%98%AF%E6%8A%80%E6%9C%AF%E9%9C%80%E6%B1%82/</loc>
-    
-    <lastmod>2017-06-02T12:38:01.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/12/22/CSS%20%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%AD%E4%BD%A0%E5%8F%AF%E8%83%BD%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%207%20%E4%BB%B6%E4%BA%8B/</loc>
-    
-    <lastmod>2017-06-02T12:37:51.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2015/12/24/20%20%E4%B8%AA%E4%BA%A4%E4%BA%92%E9%9D%9E%E5%B8%B8%E6%A3%92%E7%9A%84%E6%8C%89%E9%92%AE%E4%BB%A3%E7%A0%81/</loc>
-    
-    <lastmod>2017-06-02T12:35:33.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2016/01/21/React%20%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2017-06-02T12:35:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/2016/01/26/React%20%E5%85%A5%E9%97%A8%E5%AE%9E%E8%B7%B5/</loc>
-    
-    <lastmod>2017-06-02T12:35:10.000Z</lastmod>
     
   </url>
   
