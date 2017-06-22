@@ -562,11 +562,11 @@
     
       <category term="React" scheme="http://joveyzheng.com/tags/React/"/>
     
+      <category term="JavaScript" scheme="http://joveyzheng.com/tags/JavaScript/"/>
+    
       <category term="Tutorial" scheme="http://joveyzheng.com/tags/Tutorial/"/>
     
       <category term="Testing" scheme="http://joveyzheng.com/tags/Testing/"/>
-    
-      <category term="JavaScript" scheme="http://joveyzheng.com/tags/JavaScript/"/>
     
   </entry>
   
@@ -980,9 +980,9 @@
     
       <category term="译文" scheme="http://joveyzheng.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="Web Development" scheme="http://joveyzheng.com/tags/Web-Development/"/>
-    
       <category term="Web Dedign" scheme="http://joveyzheng.com/tags/Web-Dedign/"/>
+    
+      <category term="Web Development" scheme="http://joveyzheng.com/tags/Web-Development/"/>
     
       <category term="Websites" scheme="http://joveyzheng.com/tags/Websites/"/>
     
