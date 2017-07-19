@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://joveyzheng.com/2017/07/18/css-animations-performance/</loc>
+    
+    <lastmod>2017-07-19T06:35:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://joveyzheng.com/about/index.html</loc>
+    
+    <lastmod>2017-07-19T02:23:41.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://joveyzheng.com/2017/06/15/understand-closure/</loc>
     
     <lastmod>2017-06-15T12:36:46.000Z</lastmod>
@@ -145,13 +159,6 @@
     <loc>http://joveyzheng.com/2015/11/17/5-top-websites-on-web-design-and-development/</loc>
     
     <lastmod>2017-06-15T11:53:20.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://joveyzheng.com/about/index.html</loc>
-    
-    <lastmod>2017-06-14T15:26:30.000Z</lastmod>
     
   </url>
   

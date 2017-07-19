@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joveyzheng.com/"/>
-  <updated>2017-06-15T12:36:46.000Z</updated>
+  <updated>2017-07-19T06:35:01.000Z</updated>
   <id>http://joveyzheng.com/</id>
   
   <author>
@@ -14,6 +14,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实用的 CSS — 动画性能对比</title>
+    <link href="http://joveyzheng.com/2017/07/18/css-animations-performance/"/>
+    <id>http://joveyzheng.com/2017/07/18/css-animations-performance/</id>
+    <published>2017-07-18T12:22:36.000Z</published>
+    <updated>2017-07-19T06:35:01.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在现代浏览器中，渲染页面所要负责的线程主要有两个：主线程和排版线程。</p>
+<h2 id="主线程"><a href="#主线程" class="headerlink" title="主线程"></a>主线程</h2><ul>
+<li>运行 JS</li>
+<li>计算 HTML 元素的 CSS 样式</li>
+<li>布局页面</li>
+<li>把页面元素绘制成一个或多个位图</li>
+<li>把这些位图移交给排版线程</li>
+</ul>
+<p>在浏览器开始渲染页面，或者长时间执行某个 JS 时，主线程会一直在忙碌状态，此时对于用户的任何输入或是操作都不会有所响应。</p>
+<h2 id="排版线程"><a href="#排版线程" class="headerlink" title="排版线程"></a>排版线程</h2><ul>
+<li>通过 GPU 渲染位图，并显示在屏幕上</li>
+<li>向主线程请求更新位图的可见部分或即将可见的部分</li>
+<li>判断出当前页面处于可见的部分</li>
+<li>判断出即将通过页面滚动而可见的部分</li>
+<li>随着用户滚动页面来移动这些部分</li>
+</ul>
+<p>排版线程对于用户的操作保持快速的响应，普遍的效率时每秒 60 帧的速度去刷新显示。</p>
+<h1 id="Transtion"><a href="#Transtion" class="headerlink" title="Transtion"></a>Transtion</h1><p>下面我们在网页中实现一个元素的高度变化的动画，鼠标悬浮在元素上动画启动，直至完成：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">#foo &#123;</div><div class="line">  height: 100px;</div><div class="line">  width: 100px;</div><div class="line">  background: red;</div><div class="line">  transition: height 1s linear;</div><div class="line">&#125;</div><div class="line">#foo:hover &#123;</div><div class="line">  height: 200px;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"foo"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>通过对上述代码的观察，让我们来了解一下浏览器的两个线程是如何协同工作的：</p>
+<blockquote>
+<p>图中橘黄色部分代表操作相对较慢，消耗较大；蓝色部分代表操作相对较快，消耗较小</p>
+</blockquote>
+<p><img src="/static/images/animations-performance-transition.png" alt="animations-performance-transition"></p>
+<p>从上图我们可以看到，浏览器的两个线程在来回地切换工作，而且橘黄色出现次数较多，这意味着浏览器需要处理相当多的工作。</p>
+<p>对于浏览器而言，由于元素的高度一直在变化，因此这个动画的每一帧中，都需要重新布局 ——&gt; 绘制页面 ——&gt; 将新的位图加载到 GPU 中 ——&gt; 显示。而其中<code>加载到 GPU</code> 是一个相对缓慢的操作。</p>
+<p>同时我们也在通过浏览器去查看元素动画的过程，其实是由略微卡顿的现象的。</p>
+<h1 id="Transform"><a href="#Transform" class="headerlink" title="Transform"></a>Transform</h1><p>经过上面的实验，我们对 <code>transition</code> 属性有了比较好的了解；同时我们对上述动画性能也有一个了解。接着我需要在网页中实现一个元素的大小变化动画，鼠标悬浮在元素上动画启动，直至完成：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">#bar &#123;</div><div class="line">  height: 100px;</div><div class="line">  width: 100px;</div><div class="line">  background: red;</div><div class="line">  transition: transform 1s linear;</div><div class="line">&#125;</div><div class="line">#bar:hover &#123;</div><div class="line">  transform: scale(2);</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"bar"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>完成上述实验，再让我们来看看两个线程工作的过程：</p>
+<p><img src="/static/images/animations-performance-transform.png" alt="animations-performance-transform"></p>
+<p>由此我们可以看到，两个线程来回切换的情况并不多，橘黄色部分出现的次数也较少，蓝色部分居绝大部分，这意味着这个动画效果相较于上面的要流畅很多。</p>
+<p>在定义中，<code>transform</code> 是不会使浏览器产生重新排版的，因此 <code>transform</code> 不会影响原本的布局，以及周围的元素。它会将定义的元素作为一个整体进行缩放、移动或旋转等。</p>
+<p>基于 <code>transform</code> 这类的特性，浏览器在渲染页面时可以节省很多不必要的开支，例如重新布局和将位图传给 GPU 等工作，这样就使得动画更有效率。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>当页面需要位移动画时，我们有两种方案：使用 <code>position</code> 或是 <code>transalte</code>，而这两种是符合上述情况的。其中 <code>position</code> 的位移方案与<a href="#Transtion">第一个</a>符合，在动画执行过程中会使浏览器重新渲染；另一外 <code>transalte</code> 则与<a href="#Transform">第二个</a>符合，在执行动画时不会发生重新渲染。因此，在需要写动画时，我们需要选择合适的方案，最好是选择 <code>scale()</code>、<code>rotate()</code>、<code>transalte()</code> 等，因为他们具有更好的性能。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.w3.org/TR/2012/WD-css3-transforms-20120403/#introduction" target="_blank" rel="external">W3C: CSS Transforms</a><br><a href="https://www.w3.org/TR/css3-transitions/" target="_blank" rel="external">W3C: CSS Transitions</a><br><a href="http://blogs.adobe.com/webplatform/2014/03/18/css-animations-and-transitions-performance/" target="_blank" rel="external">css-animations-and-transitions-performance</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;在现代浏览器中，渲染页面所要负责的线程主要有两个：主线程和排版线程。&lt;/p&gt;
+&lt;h2 id=&quot;主线程&quot;&gt;&lt;a href=&quot;#主线程&quot; cla
+    
+    </summary>
+    
+      <category term="笔记随笔" scheme="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="css" scheme="http://joveyzheng.com/tags/css/"/>
+    
+      <category term="transform" scheme="http://joveyzheng.com/tags/transform/"/>
+    
+      <category term="transation" scheme="http://joveyzheng.com/tags/transation/"/>
+    
+      <category term="animation" scheme="http://joveyzheng.com/tags/animation/"/>
+    
+      <category term="浏览器渲染" scheme="http://joveyzheng.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%B8%B2%E6%9F%93/"/>
+    
+  </entry>
   
   <entry>
     <title>理解闭包</title>
@@ -165,9 +232,9 @@
     
       <category term="css" scheme="http://joveyzheng.com/tags/css/"/>
     
-      <category term="cubic-bezier" scheme="http://joveyzheng.com/tags/cubic-bezier/"/>
-    
       <category term="animation" scheme="http://joveyzheng.com/tags/animation/"/>
+    
+      <category term="cubic-bezier" scheme="http://joveyzheng.com/tags/cubic-bezier/"/>
     
   </entry>
   
@@ -980,9 +1047,9 @@
     
       <category term="译文" scheme="http://joveyzheng.com/tags/%E8%AF%91%E6%96%87/"/>
     
-      <category term="Web Dedign" scheme="http://joveyzheng.com/tags/Web-Dedign/"/>
-    
       <category term="Web Development" scheme="http://joveyzheng.com/tags/Web-Development/"/>
+    
+      <category term="Web Dedign" scheme="http://joveyzheng.com/tags/Web-Dedign/"/>
     
       <category term="Websites" scheme="http://joveyzheng.com/tags/Websites/"/>
     
@@ -1457,39 +1524,6 @@
       <category term="git" scheme="http://joveyzheng.com/tags/git/"/>
     
       <category term="项目管理" scheme="http://joveyzheng.com/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>生成 SSH keys</title>
-    <link href="http://joveyzheng.com/2015/09/07/use-git-generate-ssh-key/"/>
-    <id>http://joveyzheng.com/2015/09/07/use-git-generate-ssh-key/</id>
-    <published>2015-09-07T07:04:33.000Z</published>
-    <updated>2017-06-15T12:36:11.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先确认自己的系统中是否已经拥有密钥。在默认情况下SSH的密钥存储在其 <code>~/.ssh</code> 目录下。可以使用以下命令进入目录并列出内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ cd ~/.ssh</div><div class="line">$ ls</div><div class="line"></div><div class="line">id_rsa  id_rsa.pub  known_hosts</div></pre></td></tr></table></figure></p>
-<p>其中 <code>id_rsa</code> 和 <code>id_rsa.pub</code> 就是存储密钥的文件，带有 <code>.pub</code> 后缀的是公钥，另外一个则是私钥。如果存在这些文件，则可以直接用 <code>$ cat id_rsa.pub</code> 来读取密钥内容。<br>如果找不到这样的文件（或者不存在 <code>~/.ssh</code> 目录），则可以通过 <code>$ ssh-keygen</code> 来创建它们。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">$ ssh-keygen -t rsa -C `you@email.com`</div><div class="line"></div><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file in which to save the key (/home/schacon/.ssh/id_rsa):</div><div class="line">Created directory &apos;/home/schacon/.ssh&apos;.</div><div class="line">Enter passphrase (empty for no passphrase):</div><div class="line">Enter same passphrase again:</div><div class="line">Your identification has been saved in /home/schacon/.ssh/id_rsa.</div><div class="line">Your public key has been saved in /home/schacon/.ssh/id_rsa.pub.</div><div class="line">The key fingerprint is:</div><div class="line">d0:82:24:8e:d7:f1:bb:9b:33:53:96:93:49:da:9b:e3 you@email.com</div></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<p>首先 <code>$ ssh-keygen</code> 会确认密钥的存储位置（默认是 <code>.ssh/id_rsa</code>），然后它会要求你输入两次密钥口令。如果你不想在使用密钥时输入口令，将其留空即可（为了方便以后操作，建议不设置密码）。</p>
-<p>在完成上述操作之后即可获得 SSH key，获得的公钥大概是这样的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$ cat id_rsa.pub</div><div class="line"></div><div class="line">ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAmzM2RosSFanpxK+d3Eagt3Wicef9QbgH1x4yH3MFg2</div><div class="line">+6vIuFXchl+L3gMZabWH3BzKpBwoJICg8q9k4N8nOf5LNPtIp74hnEj/1b9Nh7OLrri82Ao6FYEdkC</div><div class="line">0NVsfhKlqha10MQrYxctimabtuKZdoUvv0knSawwvql2mvCIDra2D2350ICycZi0Fg1QULF3QdDF8E</div><div class="line">mtnvso1a5a9jgzf3tyHX6+r7lGnA+Ifzr8bxC4sqZ+aN0R7dn4uqQETF7l+n16dd370Efvbvj8CabZ</div><div class="line">qVs7r5j/fdltcmSrH3i97Yfq0XsM0CIxltOIb8+MhkRzHAXdjWY51LyfyHtyysbgHw==</div><div class="line">you@email.com</div></pre></td></tr></table></figure></p>
-<p>关于在多种操作系统中生成 SSH 密钥的更深入教程，请参阅 GitHub 的 SSH 密钥指南：<a href="https://help.github.com/articles/generating-ssh-keys" target="_blank" rel="external"><em>https://help.github.com/articles/generating-ssh-keys</em></a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;首先确认自己的系统中是否已经拥有密钥。在默认情况下SSH的密钥存储在其 &lt;code&gt;~/.ssh&lt;/code&gt; 目录下。可以使用以下命令进入目录并列出内容：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ cd ~/.ssh&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ ls&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;id_rsa  id_rsa.pub  known_hosts&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;其中 &lt;code&gt;id_rsa&lt;/code&gt; 和 &lt;code&gt;id_rsa.pub&lt;/code&gt; 就是存储密钥的文件，带有 &lt;code&gt;.pub&lt;/code&gt; 后缀的是公钥，另外一个则是私钥。如果存在这些文件，则可以直接用 &lt;code&gt;$ cat id_rsa.pub&lt;/code&gt; 来读取密钥内容。&lt;br&gt;如果找不到这样的文件（或者不存在 &lt;code&gt;~/.ssh&lt;/code&gt; 目录），则可以通过 &lt;code&gt;$ ssh-keygen&lt;/code&gt; 来创建它们。&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ ssh-keygen -t rsa -C `you@email.com`&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Generating public/private rsa key pair.&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Enter file in which to save the key (/home/schacon/.ssh/id_rsa):&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Created directory &amp;apos;/home/schacon/.ssh&amp;apos;.&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Enter passphrase (empty for no passphrase):&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Enter same passphrase again:&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Your identification has been saved in /home/schacon/.ssh/id_rsa.&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Your public key has been saved in /home/schacon/.ssh/id_rsa.pub.&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;The key fingerprint is:&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;d0:82:24:8e:d7:f1:bb:9b:33:53:96:93:49:da:9b:e3 you@email.com&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="笔记随笔" scheme="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="SSH" scheme="http://joveyzheng.com/tags/SSH/"/>
-    
-      <category term="git" scheme="http://joveyzheng.com/tags/git/"/>
-    
-      <category term="加密" scheme="http://joveyzheng.com/tags/%E5%8A%A0%E5%AF%86/"/>
     
   </entry>
   

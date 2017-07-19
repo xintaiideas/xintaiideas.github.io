@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[实用的 CSS — 动画性能对比]]></title>
+    <url>%2F2017%2F07%2F18%2Fcss-animations-performance%2F</url>
+    <content type="text"><![CDATA[前言在现代浏览器中，渲染页面所要负责的线程主要有两个：主线程和排版线程。 主线程 运行 JS 计算 HTML 元素的 CSS 样式 布局页面 把页面元素绘制成一个或多个位图 把这些位图移交给排版线程 在浏览器开始渲染页面，或者长时间执行某个 JS 时，主线程会一直在忙碌状态，此时对于用户的任何输入或是操作都不会有所响应。 排版线程 通过 GPU 渲染位图，并显示在屏幕上 向主线程请求更新位图的可见部分或即将可见的部分 判断出当前页面处于可见的部分 判断出即将通过页面滚动而可见的部分 随着用户滚动页面来移动这些部分 排版线程对于用户的操作保持快速的响应，普遍的效率时每秒 60 帧的速度去刷新显示。 Transtion下面我们在网页中实现一个元素的高度变化的动画，鼠标悬浮在元素上动画启动，直至完成： 1234567891011121314&lt;style&gt;#foo &#123; height: 100px; width: 100px; background: red; transition: height 1s linear;&#125;#foo:hover &#123; height: 200px;&#125;&lt;/style&gt;&lt;body&gt; &lt;div id="foo"&gt;&lt;/div&gt;&lt;/body&gt; 通过对上述代码的观察，让我们来了解一下浏览器的两个线程是如何协同工作的： 图中橘黄色部分代表操作相对较慢，消耗较大；蓝色部分代表操作相对较快，消耗较小 从上图我们可以看到，浏览器的两个线程在来回地切换工作，而且橘黄色出现次数较多，这意味着浏览器需要处理相当多的工作。 对于浏览器而言，由于元素的高度一直在变化，因此这个动画的每一帧中，都需要重新布局 ——&gt; 绘制页面 ——&gt; 将新的位图加载到 GPU 中 ——&gt; 显示。而其中加载到 GPU 是一个相对缓慢的操作。 同时我们也在通过浏览器去查看元素动画的过程，其实是由略微卡顿的现象的。 Transform经过上面的实验，我们对 transition 属性有了比较好的了解；同时我们对上述动画性能也有一个了解。接着我需要在网页中实现一个元素的大小变化动画，鼠标悬浮在元素上动画启动，直至完成： 1234567891011121314&lt;style&gt;#bar &#123; height: 100px; width: 100px; background: red; transition: transform 1s linear;&#125;#bar:hover &#123; transform: scale(2);&#125;&lt;/style&gt;&lt;body&gt; &lt;div id="bar"&gt;&lt;/div&gt;&lt;/body&gt; 完成上述实验，再让我们来看看两个线程工作的过程： 由此我们可以看到，两个线程来回切换的情况并不多，橘黄色部分出现的次数也较少，蓝色部分居绝大部分，这意味着这个动画效果相较于上面的要流畅很多。 在定义中，transform 是不会使浏览器产生重新排版的，因此 transform 不会影响原本的布局，以及周围的元素。它会将定义的元素作为一个整体进行缩放、移动或旋转等。 基于 transform 这类的特性，浏览器在渲染页面时可以节省很多不必要的开支，例如重新布局和将位图传给 GPU 等工作，这样就使得动画更有效率。 总结当页面需要位移动画时，我们有两种方案：使用 position 或是 transalte，而这两种是符合上述情况的。其中 position 的位移方案与第一个符合，在动画执行过程中会使浏览器重新渲染；另一外 transalte 则与第二个符合，在执行动画时不会发生重新渲染。因此，在需要写动画时，我们需要选择合适的方案，最好是选择 scale()、rotate()、transalte() 等，因为他们具有更好的性能。 参考W3C: CSS TransformsW3C: CSS Transitionscss-animations-and-transitions-performance]]></content>
+      <categories>
+        <category>笔记随笔</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>transform</tag>
+        <tag>transation</tag>
+        <tag>animation</tag>
+        <tag>浏览器渲染</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[理解闭包]]></title>
     <url>%2F2017%2F06%2F15%2Funderstand-closure%2F</url>
     <content type="text"><![CDATA[闭包 是指可以包含自由（未绑定到特定对象）变量的代码块；这些变量不是在这个代码块内或者任何全局上下文中定义的，而是在定义代码块的环境中定义（局部变量）。“闭包” 一词来源于以下两者的结合：要执行的代码块（由于自由变量被包含在代码块中，这些自由变量以及它们引用的对象没有被释放）和为自由变量提供绑定的计算环境（作用域）。 作用域闭包的一个重点在于作用域，在 JavaScript 中变量的作用域分两种：全局变量与局部变量，首先让我们来了解一下： 12345678910111213var _global = 1; // 全局变量function print() &#123; var _internal = 2; // 局部变量 console.log(_global); // 1 console.log(_internal); // 2 return _internal;&#125;print();console.log(_global); // 1console.log(_internal); // ReferenceError: _internal is not defined 此时我们可以看到，在函数内部是可以直接读取全局变量的。但当我们在外部想访问内部变量时，就会报错，因为在函数体外部时无法访问函数内部的变量的。 需要注意的是，当在函数内部定义变量时没用使用 var 等声明变量，那么它实际上会成为一个全局变量： 12345function print() &#123; _internal = 2;&#125;console.log(_internal); // 2 从内存中解释，变量的声明都存在栈中，而在 JavaScript 中存在垃圾回收机制（garbage collection），当一个函数执行完返回之后，它的内存会被自动回收，此时函数内部的变量都会被销毁。 那么我们有什么方法可以保存这一内存，并且在外部访问函数内部的变量呢 —— 闭包。 闭包在正常情况下，我们在外部时无法修改函数内部变量的值： 12345678910// 场景 1function print(x) &#123; var _internal = 1; console.log(_internal + 1);&#125;print(1); // 2// ...print(1); // 2 我们可以看到，无论 print() 调用多少次，打印的值都是 2，_internal 的值都是 1。 这是因为 JavaScript 中的垃圾回收机制，在多次调用 print() 时，每一次都需要回收前一次的内存，之后再次申请新内存，因此 _internal 无法在内存中继续保存。 换而言之，在每次调用 print() 时都需要为其和内部的变量申请新的内存空间，第一次 _internal 的内存地址可能为 0x...1，在函数调用完成之后，这块内存将被释放，再次调用时 _internal 的内存地址可能就是 0x...2 了。因此它无法再内存中被保存下来。 那么我们需要在外部使用函数内部的变量时，就需要在函数内部再声明一个函数，并将其返回： 12345678910function print() &#123; var _internal = 1; return function log() &#123; console.log(_internal); &#125;&#125;var test = print();test(); // 1 此时，我们已经可以从外部访问 print() 函数内部的变量了。 当我们需要对 print() 函数内部的 _internal 的值进行修改时，我们可以给它另外一个函数： 123456789101112131415161718// 场景 2var add;function print() &#123; var _internal = 1; add = function(x) &#123; _internal += x; &#125; return function log() &#123; console.log(_internal); &#125;&#125;var test = print();test(); // 1add(1);test(); // 2 经过上述可以看出，函数 print() 在经过 add() 运行之后，_internal 的值分别为 1 和 2，这就说明了 _internal 始终保存在内存中，并没有在 var test = print(); 调用时被回收。 这是因为 print() 内的 log() 作为返回值，被赋给 test 这个全局变量，因此 log() 始终在内存中。而 log() 依赖 print() 并且可以访问 _internal，所以 print() 也始终在内存中，而且在 var test = print(); 调用时没有被回收。 换而言之，当 _internal 在声明的时候分配了内存，我们可以将其内存地址表示为 0x...1，在 print() 函数被调用之后应该会被回收，但是由于上述原因，没有被回收，它的值将继续保留在地址为 0x...1 中。在外部可以使用指针去寻址，并取得其值。 其他例子在循环体中，我们可能遇到： 1234567891011121314151617function loopA() &#123; var arr = []; for(var i = 0; i &lt; 10; i++) &#123; arr[i] = function() &#123; return i; &#125; &#125; return arr;&#125;var test = loopA();test[0](); // 10test[1](); // 10// ...test[9](); // 10 在上述例子中，我们需要他们执行不同的参数得到不同的值。但是一共创建了 10 次匿名函数，，他们都是共享同一个环境的。在匿名函数执行之前，循环早已完成，此时的匿名函数一局指向循环体中的最后一个值了。 解决方案 1：在 es6 中我们可以使用 let 声明： 1234567891011121314151617function loopA() &#123; var arr = []; for(let i = 0; i &lt; 10; i++) &#123; arr[i] = function() &#123; return i; &#125; &#125; return arr;&#125;var test = loopA();test[0](); // 0test[1](); // 1// ...test[9](); // 9 解决方案 2：将函数声明放在循环体外部： 1234567891011121314151617function loopA() &#123; var arr = []; var func = function(n) &#123; return n; &#125; for(var i = 0; i &lt; 10; i++) &#123; arr[i] = func(i) &#125; return arr;&#125;var test = loopA();test[0]; // 0test[1]; // 1test[9]; // 9 解决方案 3： 12345678910111213141516function loopA() &#123; var arr = []; for(var i = 0; i &lt; 10; i++) &#123; arr[i] = (function(i) &#123; return i; &#125;)(i) &#125; return arr;&#125;var test = loopA();test[0]; // 0test[1]; // 1test[9]; // 9 其他解决方案请看参考 弊端 内存泄漏：由于闭包会使得函数内部的变量都被保存在内存中，不会被销毁，内存消耗很大。因此需要在退出函数之前，将不使用的变量都删除。 会修改函数内部变量的值。 总结闭包是一种特殊的对象。它由两部分构成：函数，以及创建该函数的环境。环境由闭包创建时在作用域中的任何局部变量组成。如果不是因为某些特殊任务而需要闭包，在没有必要的情况下，在其它函数中创建函数是不明智的，因为闭包对脚本性能具有负面影响，包括处理速度和内存消耗。 参考百度百科 - 闭包Wikipedia - Closure学习 Javascript 闭包（Closure）MDN - 闭包深入理解闭包系列第二篇——从执行环境角度看闭包深入理解闭包系列第四篇——常见的一个循环和闭包的错误详解深入理解javascript原型和闭包（15）——闭包]]></content>
@@ -22,8 +37,8 @@
       </categories>
       <tags>
         <tag>css</tag>
-        <tag>cubic-bezier</tag>
         <tag>animation</tag>
+        <tag>cubic-bezier</tag>
       </tags>
   </entry>
   <entry>
@@ -162,8 +177,8 @@
       </categories>
       <tags>
         <tag>译文</tag>
-        <tag>Web Dedign</tag>
         <tag>Web Development</tag>
+        <tag>Web Dedign</tag>
         <tag>Websites</tag>
       </tags>
   </entry>

@@ -4,6 +4,35 @@
 
     
   <url>
+    <loc>http://joveyzheng.com/2017/07/18/css-animations-performance/</loc>
+    <lastmod>2017-07-19T06:35:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>实用的 CSS — 动画性能对比</title>
+        <pubTime>2017-07-18T12:22:36.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+        <tag>transform</tag>
+         
+        <tag>transation</tag>
+         
+        <tag>animation</tag>
+         
+        <tag>浏览器渲染</tag>
+         
+         
+           
+             
+              <breadCrumb title="笔记随笔" url="http://joveyzheng.com/categories/%E7%AC%94%E8%AE%B0%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>http://joveyzheng.com/2017/06/15/understand-closure/</loc>
     <lastmod>2017-06-15T12:36:46.000Z</lastmod>
     <data>
@@ -111,9 +140,9 @@
         
         <tag>css</tag>
          
-        <tag>cubic-bezier</tag>
-         
         <tag>animation</tag>
+         
+        <tag>cubic-bezier</tag>
          
          
            
@@ -507,9 +536,9 @@
         
         <tag>译文</tag>
          
-        <tag>Web Dedign</tag>
-         
         <tag>Web Development</tag>
+         
+        <tag>Web Dedign</tag>
          
         <tag>Websites</tag>
          
@@ -522,7 +551,6 @@
     </data>
     </url>
 
-    
     
     
 </urlset>
